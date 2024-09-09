@@ -1021,7 +1021,7 @@ html{
  
 }
 #search-input {
-  width: 280px;
+  width: 180px;
   padding: 9px;
   font-size: 14px;
  
@@ -1111,7 +1111,7 @@ html{
   font-size: medium;
 }
 #search-input {
-  width: 250px;
+  width: 150px;
   padding: 7px;
   font-size: 12px;
  
@@ -1179,7 +1179,7 @@ html{
   font-size: small;
 }
 #search-input {
-  width: 200px;
+  width: 150px;
   padding: 7px;
   font-size: 12px;
  
