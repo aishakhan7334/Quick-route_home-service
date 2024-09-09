@@ -1,0 +1,1246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+ ::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+ }
+ ::-webkit-scrollbar-thumb{
+  background-color: #fdd911;
+  border-radius: 30px;
+  height: 5px;
+ }
+ ::-webkit-scrollbar-track{
+  background-color: #494949;
+
+ }
+   /* NAVBAR */
+
+.container{
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(#3C3C3C,#3C3C3C);
+    /* padding: 0 5%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  
+
+}
+.main-nav{
+    width: 100%;
+    height: 60px;
+    background-color: #0d100d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    width: -100px;
+}
+.main-img{
+    padding-left: 10px;
+    width: 140px;
+  
+}
+
+#search-input {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    /* padding-left: 20px; */
+  }
+  
+  #search-button {
+    height: 40px;
+    width: 60px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #fff;
+    border: 1px;
+    border-radius: 5px ;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  #search-button:hover {
+    background-color: #ccc906;
+    color: black;
+  }
+  
+  #search-results {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  #search-results li {
+    padding: 10px;
+    margin-top: 30px;
+    border: 1px solid #000000;
+    background-color: #fff;
+  }
+  
+  #search-results li:hover {
+    background-color: #8d4848;
+  }
+.content{
+    text-align: center;
+    background-image: url(assests/landing-background-img-1.jpg);
+    background-size:auto ;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    
+}
+
+
+@keyframes fadeOutUp{
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.content .main-h1{
+    font-size: 8rem;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    animation: fadeOutUp 1s ease-out;
+    transition: .5s;
+    
+}
+
+.content .main-h1:hover{
+   color: transparent;
+   -webkit-text-stroke: 2px #ccc;
+}
+.content .main-h2{
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  animation: fadeOutUp 1s ease-out;
+  
+}
+
+.animate {
+  animation: fadeOutLeft 1.5s backwards;
+  margin-top: 5px;
+  width: 80%;
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(70px); 
+    opacity: 0;
+  }
+}
+.main-btn {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all .2s;
+  border: none;
+  font-family: inherit;
+  font-weight: bolder;
+  color: black;
+  background-color: #f7da03;
+  margin-top: 20px;
+  animation: fadeOutUp 1s ease-out;
+ }
+ .main-btn a{
+  color: black;
+  text-decoration: none;
+ }
+ 
+ .main-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .main-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .main-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+ }
+ 
+ .main-btn::after {
+  background-color: #fff;
+ }
+ 
+ .main-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+ }
+
+ .contact-btn {
+  background-color: #904703;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bolder;
+  transition: 1s;
+  position: fixed;
+  left: 85%;
+  animation: swipeUp 1s ease-out;
+  margin-top: 10px;
+  z-index: 2;
+  
+}
+
+.contact-btn:hover {
+  background-color: #0d100d;
+}
+
+.contact-info {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  padding: 10px;
+  border: 1px solid #e0d72c;
+  border-radius: 5px;
+  width: 200px;
+  color: aliceblue;
+  
+}
+
+.contact-btn:hover + .contact-info {
+  display: block;
+  margin-left: 110px;
+}
+.complain-btn {
+  background-color: #431d00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  font-size: large;
+  font-weight: bold;
+  position: fixed;
+  left: 82%;
+  margin-top: 60px;
+  animation: swipeUp 1s ease-out;
+  z-index: 2;
+}
+
+.complain-btn:hover {
+  background-color: #0d100d;
+}
+
+.complain-form {
+  background-color: #0b0a0a;
+  color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  display: none;
+  margin-top: 10px;
+}
+
+#complain-submit{
+  padding: 10px 20px;
+  background: #431d00;
+  border: none;
+  color: #ccc;
+}
+#complain-submit:hover{
+  background: #0d100d;
+  border: 2px solid whitesmoke;
+}
+
+.complain-form h2 {
+  margin-top: 0;
+}
+#toggle-button{
+  padding: 10px;
+  background: #a1561d;
+  border: none;
+  color: #120e0e;
+  margin-top: 10px;
+  color: #ccc;
+}
+#toggle-button:hover{
+  background: #0d100d;
+  border: 2px solid whitesmoke;
+}
+
+   /* SOCIALS */
+.socialcard {
+  max-width: fit-content;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+  backdrop-filter: blur(15px);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.192),
+    inset 0 0 5px rgba(255, 255, 255, 0.274), 0 5px 5px rgba(0, 0, 0, 0.164);
+  transition: 0.5s;
+  animation: swipeUp 1s ease-out;
+}
+
+.socialcard:hover {
+  animation: ease-out 5s;
+  background: rgba(173, 173, 173, 0.05);
+}
+
+.socialcard ul {
+  padding: 1rem;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.socialcard ul li {
+  cursor: pointer;
+}
+
+.socialsvg {
+  transition: all 0.3s;
+  /* if you find some problems change w - h : 30px*/
+  padding: 1rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  color: rgb(255, 174, 0);
+  fill: currentColor;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+.socialtext {
+  opacity: 0;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.3s;
+  color: rgb(255, 174, 0);
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  z-index: 9999;
+  box-shadow: -5px 0 1px rgba(153, 153, 153, 0.2),
+    -10px 0 1px rgba(153, 153, 153, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
+}
+
+/*isometric prooyection*/
+.iso-pro {
+  transition: 0.5s;
+}
+.iso-pro:hover a > .socialsvg {
+  transform: translate(15px, -15px);
+  border-radius: 100%;
+}
+
+.iso-pro:hover .socialtext {
+  opacity: 1;
+  transform: translate(25px, -2px) skew(-5deg);
+}
+
+.iso-pro:hover .socialsvg {
+  transform: translate(5px, -5px);
+}
+
+.iso-pro span {
+  opacity: 0;
+  position: absolute;
+  color: #1877f2;
+  border-color: #1877f2;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+  border-radius: 50%;
+  transition: all 0.3s;
+  height: 60px;
+  width: 60px;
+}
+
+.iso-pro:hover span {
+  opacity: 1;
+}
+
+.iso-pro:hover span:nth-child(1) {
+  opacity: 0.2;
+}
+
+.iso-pro:hover span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+
+.iso-pro:hover span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+/* LOADER */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --color: hsl(0, 0%, 87%);
+  --animation: 2s ease-in-out infinite;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+}
+
+.loader .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: solid 2px var(--color);
+  border-radius: 50%;
+  margin: 0 20px;
+  background-color: transparent;
+  animation: circle-keys var(--animation);
+  z-index: 1;
+}
+
+.loader .circle .dot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--color);
+  animation: dot-keys var(--animation);
+}
+
+.loader .circle .outline {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: outline-keys var(--animation);
+}
+
+.circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.circle:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.circle:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.circle:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+.circle:nth-child(2) .dot {
+  animation-delay: 0.3s;
+}
+
+.circle:nth-child(3) .dot {
+  animation-delay: 0.6s;
+}
+
+.circle:nth-child(4) .dot {
+  animation-delay: 0.9s;
+}
+
+.circle:nth-child(5) .dot {
+  animation-delay: 1.2s;
+}
+
+.circle:nth-child(1) .outline {
+  animation-delay: 0.9s;
+}
+
+.circle:nth-child(2) .outline {
+  animation-delay: 1.2s;
+}
+
+.circle:nth-child(3) .outline {
+  animation-delay: 1.5s;
+}
+
+.circle:nth-child(4) .outline {
+  animation-delay: 1.8s;
+}
+
+.circle:nth-child(5) .outline {
+  animation-delay: 2.1s;
+}
+
+@keyframes circle-keys {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot-keys {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes outline-keys {
+  0% {
+    transform: scale(0);
+    outline: solid 20px var(--color);
+    outline-offset: 0;
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    outline: solid 0 transparent;
+    outline-offset: 20px;
+    opacity: 0;
+  }
+}
+
+  /* SERVIC-EBOXES */
+  .service-boxes{
+   position: absolute;
+   top: 110%;
+   left: 5%;
+
+  }
+ .pagescontainer{
+  display: flex;
+  max-width: 2500px;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+ }
+ .courier{
+  width: 300px;
+  height: 400px;
+  background-color: #3A3A3A;
+  
+ }
+  
+ .courierdetails{
+  position: relative;
+  background-color: #494949;
+  width: 300px;
+  height: 80px;
+  transition: .5s ease-in;
+  top: -20%;
+  cursor: pointer;
+ }
+ .courierdetails:hover{
+  background-color: #e5cc5a;
+ }
+ .courierdetails a{
+  text-decoration: none;
+ }
+ .courierlanding{
+  object-fit: auto;
+  transition: transform .7s ease-out;
+  cursor: pointer;
+  margin-top: 20px;
+
+ }
+ .courierlanding:hover{
+  transform: translateY(-15%);
+  z-index: -1;
+ }
+ .couriername{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 20px;
+ }
+  /* CARWASH */
+  .carwash{
+    width: 300px;
+    height: 400px;
+    background-color: #3A3A3A;
+    
+   }
+    
+   .carwashdetails{
+    position: relative;
+    background-color: #494949;
+    width: 300px;
+    height: 80px;
+    transition: .5s ease-in;
+    top: -20%;
+    cursor: pointer;
+   }
+   .carwashdetails:hover{
+    background-color: #f3d13cfe;
+   }
+   .carwashlanding{
+    object-fit: auto;
+    transition: transform .7s ease-out;
+    cursor: pointer;
+    margin-top: 20px;
+  
+   }
+   .carwashlanding:hover{
+    transform: translateY(-15%);
+    z-index: -1;
+   }
+   .carwashname{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 20px;
+   }
+     /* TECHREPAIR */
+     .techrepair{
+      width: 300px;
+      height: 400px;
+      background-color: #3A3A3A;
+      
+     }
+      
+     .techrepairdetails{
+      position: relative;
+      background-color: #494949;
+      width: 300px;
+      height: 80px;
+      transition: .5s ease-in;
+      top: -20%;
+      cursor: pointer;
+     }
+     .techrepairdetails:hover{
+      background-color: #f3d13cfe;
+     }
+     .techrepairlanding{
+      object-fit: auto;
+      transition: transform .7s ease-out;
+      cursor: pointer;
+      margin-top: 20px;
+     }
+     .techrepairlanding:hover{
+      transform: translateY(-15%);
+      z-index: -1;
+     }
+     .techrepairname{
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      padding-top: 20px;
+     }
+     /* MECHANIC  */
+     .mechanic{
+      width: 300px;
+      height: 400px;
+      background-color: #3A3A3A;
+      
+     }
+      
+     .mechanicdetails{
+      position: relative;
+      background-color: #494949;
+      width: 300px;
+      height: 80px;
+      transition: .5s ease-in;
+      top: -20%;
+      cursor: pointer;
+     }
+     .mechanicdetails:hover{
+      background-color: #f3d13cfe;
+     }
+     .mechaniclanding{
+      object-fit: auto;
+      transition: transform .7s ease-out;
+      cursor: pointer;
+      margin-top: 20px;
+     }
+     .mechaniclanding:hover{
+      transform: translateY(-15%);
+      z-index: -1;
+     }
+     .mechanicname{
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      padding-top: 20px;
+     }
+     /* LANDSCAPING */
+     .landscaping{
+      width: 300px;
+      height: 400px;
+      background-color: #3A3A3A;
+      
+     }
+      
+     .landscapingdetails{
+      position: relative;
+      background-color: #494949;
+      width: 300px;
+      height: 80px;
+      transition: .5s ease-in;
+      top: -20%;
+      cursor: pointer;
+     
+     }
+     .landscapingdetails:hover{
+      background-color: #f3d13cfe;
+     }
+     .landscapinglanding{
+      object-fit: auto;
+      transition: transform .7s ease-out;
+      cursor: pointer;
+      margin-top: 20px;
+     }
+     .landscapinglanding:hover{
+      transform: translateY(-15%);
+      z-index: -1;
+     }
+     .landscapingname{
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      padding-top: 20px;
+     }
+      /* ROOFINGWORK */
+      .roofing{
+        width: 300px;
+        height: 400px;
+        background-color: #3A3A3A;
+        
+       }
+        
+       .roofingdetails{
+        position: relative;
+        background-color: #494949;
+        width: 300px;
+        height: 80px;
+        transition: .5s ease-in;
+        top: -20%;
+        cursor: pointer;
+       
+       }
+       .roofingdetails:hover{
+        background-color: #f3d13cfe;
+       }
+       .roofinglanding{
+        object-fit: auto;
+        transition: transform .7s ease-out;
+        cursor: pointer;
+        margin-top: 20px;
+       }
+       .roofinglanding:hover{
+        transform: translateY(-15%);
+        z-index: -1;
+       }
+       .roofingname{
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 20px;
+       }
+        /* PAINTINGROOM */
+      .paintingroom{
+        width: 300px;
+        height: 400px;
+        background-color: #3A3A3A;
+        
+       }
+        
+       .paintingroomdetails{
+        position: relative;
+        background-color: #494949;
+        width: 300px;
+        height: 80px;
+        transition: .5s ease-in;
+        top: -20%;
+        cursor: pointer;
+       
+       }
+       .paintingroomdetails:hover{
+        background-color: #f3d13cfe;
+       }
+       .paintingroomlanding{
+        object-fit: auto;
+        transition: transform .7s ease-out;
+        cursor: pointer;
+        margin-top: 20px;
+       }
+       .paintingroomlanding:hover{
+        transform: translateY(-15%);
+        z-index: -1;
+       }
+       .paintingroomname{
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 20px;
+       }
+/* RESPONSIVENESS */
+@media (max-width: 2500px) {
+  
+}
+@media (max-width: 1200px) {
+  /* HOME */
+  .complain-btn {
+    width: 200px;
+    left: 81%;
+  }
+   .pagescontainer{
+   gap: 50px;
+  }
+  /* SERVICEBOXES */
+  .service-boxes{
+    position: absolute;
+    top: 140%;
+    left: 3%;
+ 
+   }
+   .pagescontainer{
+    display: flex;
+   justify-content: center;
+   }
+   
+ 
+}
+@media (max-width: 1150px) and (min-width:951px) {
+   /* SERVICEBOXES */
+  .service-boxes{
+    position: absolute;
+    top: 120%;
+    left: 1%;
+ 
+   }
+  .pagescontainer{
+   gap: 20px;
+   display: flex;
+   justify-content: center;
+  }
+}
+@media (max-width: 950px) {
+   /* HOME */
+  .content .main-h1{
+    font-size: 6rem;
+    margin-top: 60px;
+}
+.content{
+  background-size: cover;
+  background-position: center;
+}
+.content .main-h2{
+  font-size: 1.8rem;
+  
+}
+.complain-btn {
+  width: 200px;
+  left: 75%;
+ 
+}
+.contact-btn {
+  width: 200px;
+  left: 78%;
+ 
+}
+.toppara{
+  margin-top: 10px;
+  font-size: 13px;
+  }
+  .cta span {
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding-right: 15px;
+    
+  }
+     /* SERVICEBOXES */
+     .service-boxes{
+      position: absolute;
+      top: 100%;
+      left: 3%;
+   
+     }
+    .pagescontainer{
+     gap: 100px;
+     display: flex;
+    justify-content: center;
+    }
+}
+@media (max-width: 800px) {
+  .contact-btn {
+    width: 180px;
+    left: 77%;
+   
+  }
+  .toppara{
+    margin-top: 10px;
+    font-size: 11px;
+    }
+    .cta span {
+      letter-spacing: 1px;
+      font-size: 12px;
+      padding-right: 13px;
+      
+    }
+    /* SERVICEBOXES */
+    .service-boxes{
+      position: absolute;
+      top: 100%;
+      left: 2%;
+   
+     }
+    .pagescontainer{
+     gap: 100px;
+     display: flex;
+    justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+   /* HOME */
+  /* PERFECT */
+  .contact-btn {
+    width: 180px;
+    left: 76%;
+   
+  }
+  .complain-btn {
+    width: 200px;
+    left: 73%;
+   
+  }
+  .toppara{
+    margin-top: 10px;
+    font-size: 9px;
+    }
+    .cta span {
+      letter-spacing: 1px;
+      font-size: 10px;
+      padding-right: 10px;
+      
+    }
+    /* SERVICEBOXES */
+    .service-boxes{
+      position: absolute;
+      top: 95%;
+      left: 2%;
+   
+     }
+}
+@media (max-width: 650px) {
+   /* HOME */
+  .main-img{
+    padding-left: 7px;
+    width: 130px;
+  
+}
+  .content .main-h1{
+    font-size: 5rem;
+    margin-top: 45px;
+}
+.content .main-h2{
+  font-size: 1rem;
+  
+}
+.contact-btn {
+  width: 160px;
+  left: 72%;
+  font-size: medium;
+ 
+}
+.complain-btn {
+  width: 180px;
+  left: 68%;
+ 
+}
+#search-input {
+  width: 280px;
+  padding: 9px;
+  font-size: 14px;
+ 
+}
+
+#search-button {
+  width: 30px;
+  font-size: 12px;
+  
+}
+.main-btn {
+  font-size: 15px;
+  padding: 1em 2em;
+  font-weight: bolder;
+
+}
+.socialcard {
+  gap: .5rem;
+
+}
+.socialsvg {
+  padding: .5rem;
+  height: 30px;
+  width: 30px;
+}
+
+.socialtext {
+  padding: 5px;
+}
+.contact-info {
+  padding: 10px;
+  width: 150px;
+  font-size: 10px;
+}
+.complain-form {
+  padding: 20px;
+  width: 200px;
+  margin-top: 10px;
+}
+.toppara{
+  margin-top: 10px;
+  font-size: 9px;
+  }
+  .cta span {
+    letter-spacing: 1px;
+    font-size: 9px;
+    padding-right: 10px;
+    
+  }
+   /* SERVICEBOXES */
+   .service-boxes{
+    position: absolute;
+    top: 95%;
+    left: 2%;
+ 
+   }
+}
+@media screen and (max-width:450px){
+   /* HOME */
+  .main-img{
+    padding-left: 5px;
+    width: 110px;
+  
+  }
+  .content{
+    background-size: cover;
+    background-position: center;
+  }
+  .content .main-h1{
+    font-size: 4rem;
+    margin-top: 30px;
+}
+.content .main-h2{
+  font-size: .7rem;
+  margin-top: 10px;
+}
+.contact-btn {
+  width: 140px;
+  left: 68%;
+  margin-top: 20px;
+  font-size: small;
+}
+.complain-btn {
+  width: 160px;
+  left: 65%;
+  margin-top: 70px;
+  font-size: medium;
+}
+#search-input {
+  width: 250px;
+  padding: 7px;
+  font-size: 12px;
+ 
+}
+
+#search-button {
+  width: 20px;
+  font-size: 10px;
+  
+}
+.main-btn {
+  font-size: 15px;
+  padding: .7em 1.5em;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+.complain-form {
+  padding: 20px;
+  width: 170px;
+}
+.complain-form h2 {
+  margin-top: 0;
+  font-size: small;
+}
+.toppara{
+  margin-top: 10px;
+  font-size: 7px;
+  }
+  .cta span {
+    letter-spacing: 1px;
+    font-size: 8px;
+    padding-right: 10px;
+    
+  }
+}
+@media (max-width:400px ) {
+   /* HOME */
+  .main-img{
+    padding-left: 5px;
+    width: 80px;
+  
+}
+.content{
+  background-size: cover;
+  background-position: center;
+}
+  .content .main-h1{
+    font-size: 3.1rem;
+    margin-top: 20px;
+}
+.content .main-h2{
+  font-size: .7rem;
+  margin-top: 10px;
+  
+}
+.contact-btn {
+  width: 120px;
+  left: 64%;
+  margin-top: 20px;
+}
+.complain-btn {
+  width: 140px;
+  left: 60%;
+  margin-top: 70px;
+  font-size: small;
+}
+#search-input {
+  width: 200px;
+  padding: 7px;
+  font-size: 12px;
+ 
+}
+
+#search-button {
+  width: 20px;
+  font-size: 10px;
+  
+}
+.main-btn {
+  font-size: 12px;
+  padding: .3em 1em;
+  font-weight: bold;
+  margin-top: 10px;
+
+}
+.socialcard {
+  gap: .3rem;
+
+}
+.socialsvg {
+  padding: .3rem;
+  height: 25px;
+  width: 25px;
+}
+
+.socialtext {
+  padding: 3px;
+}
+.complain-form {
+  padding: 10px;
+  width: 120px;
+  margin-top: 10px;
+}
+input{
+   width: 90px;
+}
+#complain{
+   width: 80px;
+}
+.complain-form h2 {
+  margin-top: 0;
+  font-size: smaller;
+}
+#toggle-button{
+  padding: 8px;
+}
+  .contact-info {
+    padding: 10px;
+    width: 120px;
+    font-size: 10px;
+  }
+    /* SERVICEBOXES */
+    .service-boxes{
+      position: absolute;
+      top: 85%;
+      left: 2%;
+   
+     }
+}
+
+
+

@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handyman Service</title>
+    <link rel="stylesheet" href="servicestyle.css">
+    <link rel="shortcut icon" href="assests/handyman logo.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+ <style>
+  .topbutton{
+    background-color: #fff;
+    height: 80px;
+  }
+  .topbutton a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+.navbar{
+  background-color: #1d1d1dc6;
+  filter: blur(70%);
+  width: 100%;
+}
+.navbar-toggler{
+    background-color: aliceblue;
+    
+}
+.tooltip,.text,.tooltip-container{
+    background-color: burlywood;
+}
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 40px auto;
+  border: 2px solid rgba(0, 0, 0, 0.306);
+  padding: 30px;
+  background-image: url(https://avatars.mds.yandex.net/i?id=599ddb54019d3facdac1d9b16ef14b23de88043aecbac341-5477525-images-thumbs&n=13);
+  background-size: cover;
+}
+
+.testimonial-slider-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonial {
+  flex: 0 0 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.testimonial p {
+  font-size: 18px;
+  color: #e2e2e2;
+  margin-bottom: 20px;
+}
+
+.testimonial h4 {
+  font-size: 22px;
+  color: #edebeb;
+  margin-bottom: 10px;
+}
+@media (max-width: 680px) {
+
+  .testimonial p {
+  font-size: 14px;
+}
+
+.testimonial h4 {
+  font-size: 15px;}
+  
+
+}
+@media (max-width: 400px) {
+
+.testimonial p {
+font-size: 10px;
+}
+
+.testimonial h4 {
+font-size: 13px;}
+
+
+}
+.testimonial-prev,
+.testimonial-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0000006e;
+  border: none;
+  padding: 10px 20px;
+  font-size: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(248, 165, 10);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 100px;
+}
+
+.testimonial-prev {
+  left: 0;
+}
+
+.testimonial-next {
+  right: 0;
+}
+.priceh6{
+    color: darkgoldenrod;
+}
+.plan .inner {
+  background-color: #dde89792;
+}
+.plan .pricing {
+  background-color: #abb17a;
+}
+.plan .planbutton {
+  background-color: #7c630a;
+}
+
+.plan .planbutton:hover, .plan .planbutton:focus {
+  background-color: #9da754a8;
+}
+#accordionFlushExample{
+    background-color: #cbb26bdc;
+}
+ </style>
+<body>
+      <!-- NAVBAR -->
+  <nav class="navbar  fixed-top">
+    <div class="container-fluid">
+      <img src="assests/handyman logo.png" class="img-fluid" alt="logo" width="100px" height="50px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menubar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-2">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-black fw-bolder" href="#carouselExampleIndicators"
+                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-black fw-bolder" href="index.html"> Home page</a></li>
+                <li><a class="dropdown-item text-black fw-bolder" href="Quick_route_home .html"> Quick Route Home</a></li>
+                <li><a class="dropdown-item text-black fw-bolder" href="Handyman service .html">Handyman 
+                    Service</a></li>
+                <li><a class="dropdown-item text-black fw-bolder" href="painthouseservice.html">Home Decoration Service</a></li>
+                <li><a class="dropdown-item text-black fw-bolder" href="courier.html">Courier Service</a></li>
+                <li><a class="dropdown-item text-black fw-bolder" href="carwash.html">Carwash Service</a></li>
+                <li><a class="dropdown-item text-black fw-bolder" href="itservice .html">Information Technology
+                    Service</a></li>
+           
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-black fw-bolder" href="#aboutsec">About US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-bolder" href="#servicesec">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-bolder" href="#contactsec">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-black fw-bolder" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-black fw-bolder" href="#teamsec">Our Team</a></li>
+                <li><a class="dropdown-item text-black fw-bolder" href="#faqssec">FAQ's</a></li>
+                <li><a class="dropdown-item text-black fw-bolder" href="#productsec">Products</a></li>
+                <li><a class="dropdown-item text-black fw-bolder" href="#pricesec">Pricepackages</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </div>
+  </nav>
+<br><br><br><br><br>
+<div id="alert-box" class="alert-box">
+  <span id="alert-message"></span>
+  <button id="alert-close" onclick="closeAlert()">OK</button>
+</div>
+     <!-- CAROUSEL -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+  
+    </div>
+    <!-- SLIDE1 -->
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+        <img
+          src="assests/tools bg.jpg"
+          class=" homeimg d-block w-100" alt="..." height="600px">
+        <div class="carousel-caption  d-md-block">
+          <h1 class="handyslideh1">Trusted Handyman Service
+          </h1>
+          <img id="paint" class="caption-img1" src="assests/separator-2.png" alt=""  width="80%">
+          <div class="tooltip-container">
+            <span class="tooltip"><a href="#contactsec">GO To Link!</a></span>
+            <span class="text">Book Us Now</span>
+          </div>
+          
+        </div>
+      </div>
+      <!-- SLIDE2 -->
+      <div class="carousel-item">
+        <img id="imgslide2"
+          src="assests/handyprocess.jpg"
+          class=" homeimg d-block w-100" alt="..." height="600px" >
+
+        <div class="carousel-caption  d-md-block">
+          <h1 class="handyslideh12 ">Fast And Reliable Work </h1>
+          <img class="caption-img1" src="assests/separator-2.png" alt=""  width="80%">
+          <div class="tooltip-container">
+            <span class="tooltip">Uiverse.io</span>
+            <span class="text">Book Us Now</span>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <hr>
+<br>
+  <!-- TOPBUTTON -->
+  <div class="topbutton">
+    <a href="#carouselExampleIndicators">
+      <img class="topimg"
+        src="https://avatars.mds.yandex.net/i?id=768359e5bb3ed1ec77e0e60fe6bf2eecfb9db128-5305106-images-thumbs&n=13"
+        alt="top img car" width="40px"></a>
+    <p><a href="#carouselExampleIndicators">Go Top</a></p>
+
+  </div>
+
+  <!-- service -->
+  <div id="servicesec" class="servicehead">
+    <h1 class="serviceh1">Our Service</h1>
+  </div><br><br>
+  <div class="handyserdiv">
+  
+   <div class="handysertext">
+    <div>
+    <h1 class="handyp" >Bathroom Repair</h1>
+    <p class="handyp">Lorem ipsum dolor. Liber option dolor simet ubique dictas in semei tanta</p></div>
+    <div>
+     <h1 class="handyp">Interior Carpentry</h1>
+    <p class="handyp">Lorem ipsum dolor. Liber option dolor simet ubique dictas in semei tanta</p></div>
+    <div>
+    <h1 class="handyp">Drywall Install</h1>
+    <p class="handyp">Lorem ipsum dolor. Liber option dolor simet ubique dictas in semei tanta</p></div>
+   </div>
+ 
+   <div class="handyserimgs">
+     <img class="handphoto" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQibMbjaYfn51LYCpyqn9-1I_ecMEk7oZXnkwClxohQt9yXz4eK" alt="" width="100px">
+     <img class="handphoto" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPo4P0uUU6eANAqdXxPutisA-b0COTJq0PfUJOIdx6VZ2pZXVO" alt="" width="100px">
+     <img class="handphoto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb0curLnuir79wSg7Xa-ADoaiB2fXkseqwqpntwhKQudytShfk" alt="" width="100px">
+   </div>
+   <div class="handyserpic">
+    <img src="assests/handystand.png" alt="" width="300px">
+   </div>
+
+   <div class="handysertext2">
+    
+    <div>
+    <h1 class="handyp">Electrical Services</h1>
+    <p class="handyp">Lorem ipsum dolor. Liber option dolor simet ubique dictas in semei tanta</p></div>
+    <div>
+     <h1 class="handyp">Plumbing Services</h1>
+    <p class="handyp">Lorem ipsum dolor. Liber option dolor simet ubique dictas in semei tanta</p></div>
+    <div>
+    <h1 class="handyp">Painting&Staining</h1>
+    <p class="handyp">Lorem ipsum dolor. Liber option dolor simet ubique dictas in semei tanta</p></div>
+   </div>
+   <div class="handyserimgs2">
+     <img class="handphoto" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBeUn5JPPWxYcFW6iBK0laxboptlETeMq1ftAkBskljNbGzeA5" alt="" width="100px">
+     <img class="handphoto" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ20JQWRduboXhlxxA9O4vNbHhYN_s-Hb8aQQYP5i2y0fUjGu2s" alt="" width="100px">
+     <img class="handphoto" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSX2alMCPc6ep5_jOaZjlWd24uvDm2QaToDX8ufAyMqa9fzqfjA" alt="" width="100px">
+   </div>
+</div><br><br>
+ <!-- About -->
+ <div id="aboutsec"  class="paintsercontainer">
+    <div class="brushdiv">
+      <img class="brushimg" src="https://avatars.mds.yandex.net/i?id=768359e5bb3ed1ec77e0e60fe6bf2eecfb9db128-5305106-images-thumbs&n=13" alt="" width="100px">
+    </div>
+    <div class="paintheadings">
+     <h2 class="brushh2">Professional Handyman with Fast Services</h2>
+     <p class="brushpara">Lorem ipsum dolor sit amet, commune adipiscing velaneos elit aliquenesan</p>
+    </div>
+   </div><br>
+   <div class="homesercard">
+    <div class="panitcard1">
+      <img class="pcardimg" src="assests/screwman.jpg" alt="" >
+      <h1 class="pcardh1">Small Fixing Jobs</h1>
+      <p class="pcardpara">Lorem ipsum dolor sit amet consectetur adipisicing elit  dolor sit amet consectetur adipisicing elit. </p>
+    </div>
+
+    <div class="panitcard1">
+      <img class="pcardimg" src="assests/pipe repair.jpg" alt="">
+      <h1 class="pcardh1">Safe Plumbing Work</h1>
+      <p class="pcardpara">Lorem ipsum dolor sit amet consectetur adipisicing elit  dolor sit amet consectetur adipisicing elit. </p>
+    </div>
+
+    <div class="panitcard1">
+      <img class="pcardimg" src="assests/meter.jpg" alt="">
+      <h1 class="pcardh1">Best Local Electricians</h1>
+      <p class="pcardpara">Lorem ipsum dolor sit amet consectetur adipisicing elit  dolor sit amet consectetur adipisicing elit. </p>
+    </div>
+   </div><br><br><hr><br>
+    <!-- TESTIMONIALS -->
+    <!-- The slider container -->
+<div id="teamsec" class="testimonial-slider">
+    <!-- The slider inner container -->
+    <div class="testimonial-slider-inner">
+      <!-- Testimonial 1 -->
+      <div class="testimonial">
+        <img src="https://avatars.mds.yandex.net/i?id=4a0da404020a55e957b8b2a3b1beb43b97f3ac6ff08c7a9e-11402781-images-thumbs&n=13" alt="Client 1">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex."</p>
+        <h4>Jane Smith <br>Marketing Manager at DEF Agency</h4>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="testimonial">
+        <img src="https://avatars.mds.yandex.net/i?id=2d97b9ad13294b277e31aa0a452ec841ea7054e6-8199736-images-thumbs&n=13" alt="Client 2">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex."</p>
+        <h4>Bob Johnson <br>Entrepreneur</h4>
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="testimonial">
+        <img src="https://avatars.mds.yandex.net/i?id=ce4d520d53659de8df21bec9d2fd4a1b7d443d38-7546007-images-thumbs&n=13" alt="Client 3">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex."</p>
+        <h4>Alice Brown <br>Designer</h4>
+      </div>
+    </div>
+    <!-- Navigation buttons -->
+    <button class="testimonial-prev">Prev</button>
+    <button class="testimonial-next">Next</button>
+  </div>
+<br><br><hr><br>
+   <!-- price -->
+<div id="pricesec" class="pricediv2">
+    <h6 class="priceh6">Handy PRICES</h6>
+    <h1 class="priceh1">Choose Your Plan</h1>
+ <!-- plans -->
+ <div class="planingcontainer">
+    <div class="plan">
+      <div class="inner">
+        <span class="pricing">
+          <span>
+            $49 <small>/ m</small>
+          </span>
+        </span>
+        <p class="plantitle">Professional</p>
+        <p class="planinfo">This plan is for those who have a team already and running a large business.</p>
+        <ul class="planfeatures">
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span><strong>20</strong> team members</span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>Plan <strong>team meetings</strong></span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>File sharing</span>
+          </li>
+        </ul>
+        <div class="action">
+          <a class="planbutton" href="#">
+            Choose plan
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- plan2 -->
+    <div class="plan">
+      <div class="inner">
+        <span class="pricing">
+          <span>
+            $49 <small>/ m</small>
+          </span>
+        </span>
+        <p class="plantitle">Professional</p>
+        <p class="planinfo">This plan is for those who have a team already and running a large business.</p>
+        <ul class="planfeatures">
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span><strong>20</strong> team members</span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>Plan <strong>team meetings</strong></span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>File sharing</span>
+          </li>
+        </ul>
+        <div class="action">
+          <a class="planbutton" href="#">
+            Choose plan
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- plan3 -->
+    <div class="plan">
+      <div class="inner">
+        <span class="pricing">
+          <span>
+            $49 <small>/ m</small>
+          </span>
+        </span>
+        <p class="plantitle">Professional</p>
+        <p class="planinfo">This plan is for those who have a team already and running a large business.</p>
+        <ul class="planfeatures">
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span><strong>20</strong> team members</span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>Plan <strong>team meetings</strong></span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>File sharing</span>
+          </li>
+        </ul>
+        <div class="action">
+          <a class="planbutton" href="#">
+            Choose plan
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- plan4 -->
+
+    <div class="plan">
+      <div class="inner">
+        <span class="pricing">
+          <span>
+            $49 <small>/ m</small>
+          </span>
+        </span>
+        <p class="plantitle">Professional</p>
+        <p class="planinfo">This plan is for those who have a team already and running a large business.</p>
+        <ul class="planfeatures">
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span><strong>20</strong> team members</span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>Plan <strong>team meetings</strong></span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>File sharing</span>
+          </li>
+        </ul>
+        <div class="action">
+          <a class="planbutton" href="#">
+            Choose plan
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <hr><br>
+  <!-- FAQS -->
+  <div id="faqssec">
+    <h1 class="faqsh5" style="color: black;">FAQ's</h1>
+  </div>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          What are your emergency plumbing services?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Our emergency plumbing services include fixing burst pipes, unclogging drains, and repairing leaky faucets. We are available 24/7 to handle any plumbing emergency.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          How do I know if I have a slab leak? 
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Signs of a slab leak include water spots on the floor, high water bills, and the sound of running water when no fixtures are in use. If you suspect a slab leak, call us immediately to prevent further damage.
+
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          How often should I have my water heater inspected? 
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">We recommend having your water heater inspected annually to ensure it's working efficiently and safely. Regular maintenance can help extend the life of your water heater.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          Can you help me with electrical code compliance?
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Yes, we can help you ensure your electrical systems are compliant with local electrical codes and regulations. Our licensed electricians are familiar with the latest codes and can help you avoid costly fines and penalties.</div>
+      </div>
+    </div>
+
+
+  </div>
+  </div><br><br>
+ <!-- products -->
+ <div id="productsec" class="productheadings">
+    <h5 class="producth5">ONLINE STORE</h5>
+    <h1 class="producth1"> Popular Products</h1><br>
+  </div>
+  <div class="productcontainer2">
+    <!-- PRODUCT1 -->
+    <div class="productcard">
+      <div class="productcard-img">
+        <div class="productimg"><img src="https://avatars.mds.yandex.net/i?id=e2919aca06ff15ff186df1d076355b2b90e22fb7-5345276-images-thumbs&n=13" alt="" width="200px"></div>
+      </div>
+      <div class="productcard-title">Plumbing Tools</div>
+      <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <hr class="productcard-divider">
+      <div class="productcard-footer">
+        <div class="productcard-price"><span>$</span> 163.99</div>
+        <button class="productcard-btn" onclick="addToCartAlert()">
+          <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+        </button>
+        
+       
+      </div>
+    </div>
+    <!-- PRODUCT2 -->
+    <div class="productcard">
+      <div class="productcard-img">
+        <div class="productimg"><img src="https://avatars.mds.yandex.net/i?id=8871ade49708bd2ba52db155cd3316092d06bf4e5a9cbd86-11922792-images-thumbs&n=13" alt="" width="200px"></div>
+      </div>
+      <div class="productcard-title">Neckjoint ferrules with screws</div>
+      <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <hr class="productcard-divider">
+      <div class="productcard-footer">
+        <div class="productcard-price"><span>$</span> 2.45</div>
+        <button class="productcard-btn" onclick="addToCartAlert()">
+          <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+        </button>
+        <div id="alert-box" class="alert-box">
+          <span id="alert-message"></span>
+          <button id="alert-close" onclick="closeAlert()">OK</button>
+        </div>
+      </div>
+    </div>
+    <!-- PRODUCT3 -->
+    <div class="productcard">
+      <div class="productcard-img">
+        <div class="productimg"><img src="https://avatars.mds.yandex.net/i?id=36cf9f961cdd6bc85f71875e0c1cdc088d0c8450-4546582-images-thumbs&n=13" alt="" width="200px"></div>
+      </div>
+      <div class="productcard-title">Pipes</div>
+      <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <hr class="productcard-divider">
+      <div class="productcard-footer">
+        <div class="productcard-price"><span>$</span> 41.99</div>
+        <button class="productcard-btn" onclick="addToCartAlert()">
+          <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+        </button>
+        <div id="alert-box" class="alert-box">
+          <span id="alert-message"></span>
+          <button id="alert-close" onclick="closeAlert()">OK</button>
+        </div>
+      </div>
+    </div>
+    <!-- PRODUCT4 -->
+    <div class="productcard">
+      <div class="productcard-img">
+        <div class="productimg"><img src="https://avatars.mds.yandex.net/i?id=c9686f98ae41efc375fe683148e8b6d427eb9df9-10207868-images-thumbs&n=13" alt="" width="200px"></div>
+      </div>
+      <div class="productcard-title">Wires </div>
+      <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <hr class="productcard-divider">
+      <div class="productcard-footer">
+        <div class="productcard-price"><span>$</span> 29.45</div>
+        <button class="productcard-btn" onclick="addToCartAlert()">
+          <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+        </button>
+        <div id="alert-box" class="alert-box">
+          <span id="alert-message"></span>
+          <button id="alert-close" onclick="closeAlert()">OK</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  <br><br><hr><br>
+   <!-- CONTACT US -->
+   <div id="contactsec" class="contactdiv">
+    <h1 class="contacthead">Contact us</h1>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28928.09784460956!2d67.03835374087417!3d24.99970036456119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb341d26f218b8f%3A0xd9b660108c87a6b9!2sThe%20Courier%20Guy%20(Skynet%20%26%20DHL%20Courier%20Services)!5e0!3m2!1sen!2s!4v1721569252289!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="contactinfo">
+  <div class="contact1"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRxQR5onnZ3JxJAXlhNyUUm4G_NM6pRJJKztrMcBG0SBNLQCVx" alt="call-img" width="50px " style="margin: auto ; display: flex; padding-top: 40px;">
+  <h3 class="contacth3">Call: 7784-786-34</h3>
+  <img src="stack.png" alt="line" width="30%" height="50px" style="margin: auto; display: flex;">
+  <p class="contactpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Volupta.</p>
+  <h6 class="contacth6">Working hours 08:00 - 22:00</h6>
+
+</div>
+  <div class="contact2">
+    <h3 class="ratecontacth3">Please Rate Our Service</h3>
+    <div class="contactrating">
+      <form class="contactrating-form">
+        <label for="super-happy" class="lb">
+      <input type="radio" name="rating" class="super-happy" id="super-happy" value="super-happy">
+      <svg class="svg" viewBox="0 0 24 24"><path d="M12,17.5C14.33,17.5 16.3,16.04 17.11,14H6.89C7.69,16.04 9.67,17.5 12,17.5M8.5,11A1.5,1.5 0 0,0 10,9.5A1.5,1.5 0 0,0 8.5,8A1.5,1.5 0 0,0 7,9.5A1.5,1.5 0 0,0 8.5,11M15.5,11A1.5,1.5 0 0,0 17,9.5A1.5,1.5 0 0,0 15.5,8A1.5,1.5 0 0,0 14,9.5A1.5,1.5 0 0,0 15.5,11M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path></svg>
+      </label>
+        <label for="neutral" class="lb">
+      <input type="radio" name="rating" class="neutral" id="neutral" value="neutral">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="0 0 24 24"><path d="M8.5,11A1.5,1.5 0 0,1 7,9.5A1.5,1.5 0 0,1 8.5,8A1.5,1.5 0 0,1 10,9.5A1.5,1.5 0 0,1 8.5,11M15.5,11A1.5,1.5 0 0,1 14,9.5A1.5,1.5 0 0,1 15.5,8A1.5,1.5 0 0,1 17,9.5A1.5,1.5 0 0,1 15.5,11M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M9,14H15A1,1 0 0,1 16,15A1,1 0 0,1 15,16H9A1,1 0 0,1 8,15A1,1 0 0,1 9,14Z"></path></svg>
+      </label>
+        <label for="super-sad" class="lb">
+      <input type="radio" name="rating" class="super-sad" id="super-sad" value="super-sad">
+      <svg class="svg" viewBox="0 0 24 24"><path d="M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M16.18,7.76L15.12,8.82L14.06,7.76L13,8.82L14.06,9.88L13,10.94L14.06,12L15.12,10.94L16.18,12L17.24,10.94L16.18,9.88L17.24,8.82L16.18,7.76M7.82,12L8.88,10.94L9.94,12L11,10.94L9.94,9.88L11,8.82L9.94,7.76L8.88,8.82L7.82,7.76L6.76,8.82L7.82,9.88L6.76,10.94L7.82,12M12,14C9.67,14 7.69,15.46 6.89,17.5H17.11C16.31,15.46 14.33,14 12,14Z"></path></svg>
+      </label></form></div>
+  </div>
+</div>
+
+    </div></div><br><br>
+      <!-- FOOTER -->
+   <footer>
+    <div class="footercontainer">
+      <div class="footerrow">
+        <div class="footercol-md-2">
+          <h4 class=" footerh4">About Us</h4>
+          <ul class="footerul">
+          <li class="footerli" ><a class="footera" href="#aboutsec">	About Us</a></li>
+          <li  class="footerli"><a  class="footera" href="#teamsec">Our Team</a></li> 
+          <li  class="footerli"><a  class="footera"  href="#pricesec">	Pricing Plans</a></li> 
+          <li  class="footerli"><a  class="footera"  href="#servicesec">Our Services</a></li> 
+        </ul>
+        </div>
+        <div class="footercol-md-2">
+          <h4 class=" footerh4">Useful information </h4>
+          <ul class="footerul">
+            <li class="footerli" ><a class="footera" href="#carouselExampleIndicators">Home</a></li>
+            <li  class="footerli"><a  class="footera" href="#productsec">Product List</a></li>
+            <li  class="footerli"><a  class="footera"  href="#contactsec">Get In Touch</a></li>
+            <li  class="footerli"><a  class="footera"  href="#faqssec">FAQ's</a></li>
+          </ul>
+        </div>
+        <div class="footercol-md-8">
+          <div class="fform-container">
+            <form class="fform" onsubmit="return validateForm()">
+              <div class="fform-group">
+                <label for="email"> Email</label>
+                <input required="" name="email" id="email" type="text">
+                <span id="email-error" style="color: rgb(255, 183, 0);"></span>
+              </div><br>
+              <div class="fform-group">
+                <label for="textarea">How Can We Help You?</label>
+                <textarea required="" cols="50" rows="10" id="textarea" name="textarea"></textarea>
+                <span id="textarea-error" style="color: rgb(255, 183, 0);"></span>
+              </div>
+              <button type="submit" class="fform-submit-btn">Submit</button>
+              <span id="form-error" style="color: rgb(255, 183, 0);"></span>
+            </form>
+          </div>
+        </div>
+      </div><hr>
+      <div class="footerrow">
+        <div class="footercol-md-6">
+          <img class="footlogo" src="assests/logo.png" alt="logo" width="300px" height="150px">
+        </div>
+        <div class="footercol-md-6">
+          <h4 class=" footerh4">About Service </h4>
+          <p class="footerabout">Our mission is to be the most trusted and efficient courier service , delivering packages and parcels with precision and care. We strive to build long-term relationships with our customers, understanding their unique needs and exceeding their expectations.</p></div></div><hr>
+          <div class="footerrow text-center">
+        <div class="footercol-md-12 ">
+      <p class="footercopyright">Copyright &copy; 2023 Quick Route Courier Service. All rights reserved.</p></div></div>
+    </div>
+  </footer>
+
+
+  <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="clzptt2v603jhnibg52ww2gq9"></script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script src="web.js"></script>
+  <script>
+          // Get the slider inner container
+const sliderInner = document.querySelector('.testimonial-slider-inner');
+
+// Get the navigation buttons
+const prevButton = document.querySelector('.testimonial-prev');
+const nextButton = document.querySelector('.testimonial-next');
+
+// Get the testimonials
+const testimonials = document.querySelectorAll('.testimonial');
+
+// Set the current index
+let currentIndex = 0;
+
+// Function to show the next testimonial
+function nextTestimonial() {
+  if (currentIndex === testimonials.length - 1) {
+    currentIndex = 0;
+  } else {
+    currentIndex++;
+  }
+  sliderInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// Function to show the previous testimonial
+function prevTestimonial() {
+  if (currentIndex === 0) {
+    currentIndex = testimonials.length - 1;
+  } else {
+    currentIndex--;
+  }
+  sliderInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// Add event listeners to the navigation buttons
+prevButton.addEventListener('click', prevTestimonial);
+nextButton.addEventListener('click', nextTestimonial);
+
+// Show the first testimonial when the page loads
+sliderInner.style.transform = `translateX(0)`;
+
+
+
+
+ //scroll
+ ScrollReveal({
+      //reset: true,
+      distance: "100px",
+      duration: 2500,
+      delay: 400
+
+
+    });
+
+    ScrollReveal().reveal('.serviceh1,.handyp,.priceh6,.priceh1', { delay: 300, origin: 'left' });
+    ScrollReveal().reveal('.brushh2,.brushpara,.workh1,.faqsh5 ,.productimg,.productheadings,.handphoto', { delay: 300, origin: 'top' });
+    ScrollReveal().reveal('.panitcard1,.pcardh1,.pcardpara,.testimonial-slider,.galleryimgs,.accordion-item,.topbutton,.productcard,.paintctncontainer,.ctnleft,.fform-container,.footlogo,.handyserpic,.contactinfo,.plan', { delay: 300, origin: 'bottom' });
+    ScrollReveal().reveal('.columnscontactooterul,.footerabout,.footerul,.contacthead', { delay: 350, origin: 'left' });
+    ScrollReveal().reveal('.paintctnhead,.footerh4,iframe', { delay: 350, origin: 'top' });
+    ScrollReveal().reveal('.footercopyright', { delay: 700, origin: "right", distance: "70px" });
+  </script>
+    </body>
+</html>

@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COURIER SERVICE/QUICK ROUTE SERVICE HUB</title>
+  <link rel="stylesheet" href="servicestyle.css">
+  <link rel="shortcut icon" href="assests/1-removebg-preview.png" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<style>
+  body {
+    background-color: rgba(222, 221, 221, 0.86);
+  }
+  .topbutton{
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+  }
+  .topbutton a{
+    color: #000;
+    font-weight: bolder;
+  }
+  
+ </style>
+<body>
+  <div class="topdiv">
+    <div class="topcontainer">
+      <div class="toprow">
+        <div>
+          <p class="toppara"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> <br>Phone: 555-555-5555</p>
+
+        </div>
+        <div>
+          <p class="toppara"><i class="fa-regular fa-clock" style="color: #ffffff;"></i><br> Monday - Friday: 9am - 5pm/
+            <br>Closed on Weekend</p>
+        </div>
+        <p class="toppara3">&copy; <br> 2024 ServiceHub. All rights reserved.</p>
+        <button class="cta">
+          <span class="hover-underline-animation"><a href="#productsec">Shop now </a> </span>
+          <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+        </button>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar navbar-expand d-flex justify-content-around mt-0">
+    <div class="couriercontainer-fluid ">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
+        <img src="assests/1-removebg-preview.png" class="img-fluid" alt="logo" width="100px">
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black fw-bolder" href="#carouselExampleIndicators" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-black fw-bolder" href="index.html"> Home page</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="Quick_route_home.html"> Quick Route Home</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="courier.html">Courier Service</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="carwash.html">Carwash Service</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="itservice .html">Information Technology Service</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="painthouseservice.html">Home Decoration Service</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="Handyman service .html">Handyman 
+                Service</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a id="shownli" class="nav-link text-black fw-bolder" href="#aboutsec">About US</a>
+          </li>
+          <li class="nav-item">
+            <a id="shownli" class="nav-link text-black fw-bolder" href="#servicesec">Service</a>
+          </li>
+          <li class="nav-item">
+            <a id="shownli" class="nav-link text-black fw-bolder" href="#contactsec">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black fw-bolder" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a id="hiddenli" class="dropdown-item text-black fw-bolder" href="#productsec">about us</a></li>
+              <li><a id="hiddenli"  class="dropdown-item text-black fw-bolder" href="#productsec">Service</a></li>
+              <li><a id="hiddenli"  class="dropdown-item text-black fw-bolder" href="#productsec">Contact us</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="#teamsec">Our Team</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="#pricesec">Price Packaging</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="#clientsec">Our Clients</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="#faqssec">FAQ's</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="#productsec">Products</a></li>
+             
+          </li>
+        </ul>
+       
+    </div>
+  </nav><br>  <div id="alert-box" class="alert-box">
+    <span id="alert-message"></span>
+    <button id="alert-close" onclick="closeAlert()">OK</button>
+  </div>
+  <!-- CAROUSEL -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <!-- SLIDE1 -->
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+        <img
+          src="https://avatars.mds.yandex.net/i?id=8ad3b9612a5fc6fd26a05e5646f8beaef29c2a85-9181379-images-thumbs&n=13"
+          class=" homeimg d-block w-100" alt="..." height="600px">
+        <div class="carousel-caption  d-md-block">
+          <img class="caption-img" src="assests/shine.png" alt="">
+          <h5 class="slidepara">MOVING WITH US</h5>
+          <h1 class="slideh1">Super Fast And Fuss Free Services
+          </h1>
+          <img class="caption-img1" src="assests/wrinkled.png" alt=""  width="80%">
+        </div>
+      </div>
+      <!-- SLIDE2 -->
+      <div class="carousel-item">
+        <img id="imgslide2"
+          src="https://avatars.mds.yandex.net/i?id=4bd5153f10f58e8b00f86678ed37cbc773847fef-8496825-images-thumbs&n=13"
+          class=" homeimg d-block w-100" alt="..." height="600px">
+
+        <div class="carousel-caption  d-md-block">
+          <img class="caption-img" src="assests/card transaction.png" alt="">
+          <h5 class="slidepara2">PAY ON SPOT</h5>
+          <h1 class="slideh12">Easy Spot-on Card Payment Methods </h1>
+          <img class="caption-img1" src="assests/h1" alt=""  width="80%">
+        </div>
+      </div>
+      <!-- SLIDE3 -->
+      <div class="carousel-item">
+        <img id="slideimg"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSP0_LMF3dfvBaEqFbYt9R6KJip6-0CgLbHY3pKmUr_RejoAgvnFedv-7HV2pBKtllHw&usqp=CAU"
+          height="600px" class=" homeimg d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <img class="caption-img" src="assests/cloud.png" alt="">
+          <img class="caption-img" src="assests/truck.png" alt="">
+          <img class="caption-img" src="assests/cloud.png" alt="">
+          <h5 class="slidepara">MOVING WITH US</h5>
+          <h1 class="slideh1">Fast And Secure Big And Small Packages</h1>
+          <img class="caption-img1" src="assests/wrinkled.png" alt="" width="80%">
+          <img class="caption-img2"
+            src="https://servicemaster.qodeinteractive.com/wp-content/uploads/2017/03/h1-slider-img-5.png" alt=""
+            width="100%" height="200px">
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <hr>
+  <!-- TOPBUTTON -->
+  <div class="topbutton">
+    <a href="#carouselExampleIndicators">
+      <img class="topimg"
+        src="assests/truck_preview.png"
+        alt="top img car" width="50px"></a>
+    <p><a href="#carouselExampleIndicators">Go Top</a></p>
+
+  </div>
+
+  
+  <!-- introcard1 -->
+  <div class="parentintro">
+    <div class="introcontainer">
+      <!-- card1 -->
+      <div class="introcard">
+        <div class="introcard-front">
+          <img class="introimg" src="assests/truck_preview.png" alt="" width="80px">
+          <h4 class="introtitle">Company Moving</h4>
+          <img class="introline" src="assests/line-removebg-preview.png" alt="" width="50px">
+
+        </div>
+        <div class="introcard-back">
+          <p class="intropara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi error distinctio minus
+            ratione non, quam voluptate. Voluptatibus.</p>
+        </div>
+      </div>
+      <!-- card2 -->
+      <div class="introcard">
+        <div class="introcard-front">
+          <img class="introimg" src="assests/thumb-removebg-preview.png" alt="" width="80px">
+          <h4 class="introtitle"> Postal Distribution </h4>
+
+          <img class="introline" src="assests/line-removebg-preview.png" alt="" width="50px">
+
+        </div>
+        <div class="introcard-back">
+          <p class="intropara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi error distinctio minus
+            ratione non, quam voluptate. Voluptatibus.</p>
+        </div>
+      </div>
+      <!-- card3 -->
+      <div class="introcard">
+        <div class="introcard-front">
+          <img class="introimg" src="assests/arrow-removebg-preview.png" alt="" width="80px">
+          <h4 class="introtitle">Warehouse Logistics</h4>
+          <img class="introline" src="assests/line-removebg-preview.png" alt="" width="50px">
+
+        </div>
+        <div class="introcard-back">
+          <p class="intropara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi error distinctio minus
+            ratione non, quam voluptate. Voluptatibus.</p>
+        </div>
+      </div>
+    </div>
+  </div><br><hr><br>
+
+  <!-- service -->
+  <div id="servicesec" class="servicehead">
+    <h1 class="serviceh1">Our Service</h1>
+  </div><br><br>
+  <div class="loader">
+    <div class="truckWrapper">
+      <div class="truckBody">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 198 93"
+          class="trucksvg"
+        >
+          <path
+            stroke-width="3"
+            stroke="#282828"
+            fill="#F83D3D"
+            d="M135 22.5H177.264C178.295 22.5 179.22 23.133 179.594 24.0939L192.33 56.8443C192.442 57.1332 192.5 57.4404 192.5 57.7504V89C192.5 90.3807 191.381 91.5 190 91.5H135C133.619 91.5 132.5 90.3807 132.5 89V25C132.5 23.6193 133.619 22.5 135 22.5Z"
+          ></path>
+          <path
+            stroke-width="3"
+            stroke="#282828"
+            fill="#7D7C7C"
+            d="M146 33.5H181.741C182.779 33.5 183.709 34.1415 184.078 35.112L190.538 52.112C191.16 53.748 189.951 55.5 188.201 55.5H146C144.619 55.5 143.5 54.3807 143.5 53V36C143.5 34.6193 144.619 33.5 146 33.5Z"
+          ></path>
+          <path
+            stroke-width="2"
+            stroke="#282828"
+            fill="#282828"
+            d="M150 65C150 65.39 149.763 65.8656 149.127 66.2893C148.499 66.7083 147.573 67 146.5 67C145.427 67 144.501 66.7083 143.873 66.2893C143.237 65.8656 143 65.39 143 65C143 64.61 143.237 64.1344 143.873 63.7107C144.501 63.2917 145.427 63 146.5 63C147.573 63 148.499 63.2917 149.127 63.7107C149.763 64.1344 150 64.61 150 65Z"
+          ></path>
+          <rect
+            stroke-width="2"
+            stroke="#282828"
+            fill="#FFFCAB"
+            rx="1"
+            height="7"
+            width="5"
+            y="63"
+            x="187"
+          ></rect>
+          <rect
+            stroke-width="2"
+            stroke="#282828"
+            fill="#282828"
+            rx="1"
+            height="11"
+            width="4"
+            y="81"
+            x="193"
+          ></rect>
+          <rect
+            stroke-width="3"
+            stroke="#282828"
+            fill="#DFDFDF"
+            rx="2.5"
+            height="90"
+            width="121"
+            y="1.5"
+            x="6.5"
+          ></rect>
+          <rect
+            stroke-width="2"
+            stroke="#282828"
+            fill="#DFDFDF"
+            rx="2"
+            height="4"
+            width="6"
+            y="84"
+            x="1"
+          ></rect>
+        </svg>
+      </div>
+      <div class="truckTires">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 30 30"
+          class="tiresvg"
+        >
+          <circle
+            stroke-width="3"
+            stroke="#282828"
+            fill="#282828"
+            r="13.5"
+            cy="15"
+            cx="15"
+          ></circle>
+          <circle fill="#DFDFDF" r="7" cy="15" cx="15"></circle>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 30 30"
+          class="tiresvg"
+        >
+          <circle
+            stroke-width="3"
+            stroke="#282828"
+            fill="#282828"
+            r="13.5"
+            cy="15"
+            cx="15"
+          ></circle>
+          <circle fill="#DFDFDF" r="7" cy="15" cx="15"></circle>
+        </svg>
+      </div>
+      <div class="road"></div>
+  
+      <svg
+        xml:space="preserve"
+        viewBox="0 0 453.459 453.459"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns="http://www.w3.org/2000/svg"
+        id="Capa_1"
+        version="1.1"
+        fill="#000000"
+        class="lampPost"
+      >
+        <path
+          d="M252.882,0c-37.781,0-68.686,29.953-70.245,67.358h-6.917v8.954c-26.109,2.163-45.463,10.011-45.463,19.366h9.993
+  c-1.65,5.146-2.507,10.54-2.507,16.017c0,28.956,23.558,52.514,52.514,52.514c28.956,0,52.514-23.558,52.514-52.514
+  c0-5.478-0.856-10.872-2.506-16.017h9.992c0-9.354-19.352-17.204-45.463-19.366v-8.954h-6.149C200.189,38.779,223.924,16,252.882,16
+  c29.952,0,54.32,24.368,54.32,54.32c0,28.774-11.078,37.009-25.105,47.437c-17.444,12.968-37.216,27.667-37.216,78.884v113.914
+  h-0.797c-5.068,0-9.174,4.108-9.174,9.177c0,2.844,1.293,5.383,3.321,7.066c-3.432,27.933-26.851,95.744-8.226,115.459v11.202h45.75
+  v-11.202c18.625-19.715-4.794-87.527-8.227-115.459c2.029-1.683,3.322-4.223,3.322-7.066c0-5.068-4.107-9.177-9.176-9.177h-0.795
+  V196.641c0-43.174,14.942-54.283,30.762-66.043c14.793-10.997,31.559-23.461,31.559-60.277C323.202,31.545,291.656,0,252.882,0z
+  M232.77,111.694c0,23.442-19.071,42.514-42.514,42.514c-23.442,0-42.514-19.072-42.514-42.514c0-5.531,1.078-10.957,3.141-16.017
+  h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
+        ></path>
+      </svg>
+    </div>
+  </div><br>
+ 
+  
+
+  <!-- servicedetails -->
+  <div class="sercontainer">
+    <div class="sercard">
+      <h1 class="serh1">The Fastest Courier Service</h1>
+      <img class="lineimg" src="assests/the-preview.png" alt="" width="50%" height="15px">
+      <p class="serpara">Daily Delivery Specialists For Personal or Business Clients</p>
+    </div>
+    <div class="sercontent">
+      <div class="seritems">
+        <ul>
+          <li class="serlist">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li class="serlist">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li class="serlist">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li class="serlist">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li class="serlist">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        </ul>
+      </div>
+      <div class="seritems"></div>
+      <ul>
+        <li class="serlist">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li class="serlist">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li class="serlist">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li class="serlist">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li class="serlist">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      </ul>
+    </div>
+  </div>
+  </div><br><br>
+
+  <div class="blurcards">
+    <div class="blurcard grey">
+      <p class="cardtip">We Provide The Fastest Courier Service Nowadays.</p>
+      <p class="second-text">Local Same Day Delivery for Personal And Bussiness Clients All Over The Country</p>
+      <p class="third-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iste inventore corporis error
+        voluptate modi incidunt repudiandae excepturi, vero fugit odit delectus dolores itaque eos doloremque porro
+        nulla. Totam, obcaecati!</p>
+    </div>
+
+    <div class="blurcard grey">
+      <p class="cardtip">Want to Send Just One Item? Send It Immediately!</p>
+      <p class="second-text">No More Waiting For Our Service. We Provide The Fastest Door to Door Service.</p>
+      <p class="third-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, iste inventore corporis error
+        voluptate modi incidunt repudiandae excepturi, vero fugit odit delectus dolores itaque eos doloremque porro
+        nulla. Totam, obcaecati!</p>
+    </div>
+  </div>
+  <br><br><hr><br>
+  <!-- INFOCARD -->
+  <!-- CLIENTS -->
+  <div id="clientsec" class="reviewhead">
+    <h5 class="clienth5">MOVING WITH US</h5>
+    <h1 class="reviewh1">What Our Clients Say</h1>
+    <img class="reviewseparator" src="assests/theseparator.png" style="margin: auto; margin-top: -10px;" alt="" height="20px" width="20%">
+    <p class="clientpara">Daily Delivery Specialists For Personal or Business Clients</p></div>
+    <div class="reviewcontainer">
+      <div class="reviewcard">
+        <img src="data:image/png;base64,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" width="50px" alt="client icon">
+        <p class="reviewpara">"Great customer service and very timely delivery. The driver was great and worked very
+          hard to make it to the destination on time. I very much appreciate the..."</p>
+      </div>
+      <div class="reviewcard">
+        <img src="data:image/png;base64,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" width="50px" alt="client icon">
+        <p class="reviewpara">"Staff is wonderful. Delivery guys are prompt!!" - Tanya R., Medical Industry Client
+
+          Professional and wonderful service</p>
+      </div>
+      <div class="reviewcard">
+        <img src="data:image/png;base64,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" width="50px" alt="client icon">
+        <p class="reviewpara">"Your staff, from the person that answers the phone to the person making the pick-up or
+          delivery, is excellent! We appreciate your professionalism and wonderful service." -</p>
+      </div>
+      <div class="reviewcard">
+        <img src="data:image/png;base64,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" width="50px" alt="client icon">
+        <p class="reviewpara">"Speaking for myself, I am very happy with your service! Pick-ups are always prompt and I
+          have not experienced any trouble with deliveries." - Tammy E., Legal Industry Client</p>
+    
+    </div>
+  </div><br><br>
+ <hr><br>
+   <!-- ABOUT -->
+   <div id="aboutsec" class="aboutcontainer">
+    <div class="carousel-inner">
+     <div class="carousel-item active ">
+       <img src="assests/about-us-parallax-2.jpg" class="d-block w-100" alt="..." height="500px">
+       <div class="carousel-caption  d-md-block">
+         <h5 id="abth5" >MOVING WITH US</h5>
+         <h1 id="abth1">Professional Moving Services For Area
+         </h1>
+         <img  class="abtcaption-img1" src="assests/separator-2.png" alt=""><br>
+         <button class="abtbutton">
+           <span class="abtbutton_lg">
+               <span class="abtbutton_sl"></span>
+               <span class="abtbutton_text"><a class="btnanchor" href="#productsec">See products</a></span>
+           </span>
+       </button>
+       </div>
+     </div></div><br><br><br>
+     <!-- order -->
+     <div class="ordercontainer">
+       <div class="orderleft-side">
+        <div class="ordercard">
+         <div class="ordercard-line"></div>
+         <div class="orderbuttons"></div>
+        </div>
+        <div class="orderpost">
+         <div class="orderpost-line"></div>
+         <div class="orderscreen">
+          <div class="orderdollar">$</div>
+         </div>
+         <div class="ordernumbers"></div>
+         <div class="ordernumbers-line2"></div>
+        </div>
+       </div>
+       <div class="orderright-side">
+        <div class="ordernew">Place an Order</div>
+        
+         <svg viewBox="0 0 451.846 451.847" height="512" width="512" xmlns="http://www.w3.org/2000/svg" class="arrow"><path fill="#cfcfcf" data-old_color="#000000" class="active-path" data-original="#000000" d="M345.441 248.292L151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z"></path></svg>
+       
+       </div>
+      </div><br><br>
+
+      <!-- PROCESS-->
+     <div id="processsec" class="abtcarousel-inner">
+       <div class="abtcarousel-item active ">
+         <div class="abtcarousel-caption  d-md-block">
+           <h5 class="abtslidh5">MOVING WITH US</h5>
+           <h1 class="abtslidh1">How This Works?
+           </h1>
+           <img  class="abtcaption-img2" src="assests/separator-2.png" alt=""><br>
+           <!-- PROCESS BOX -->
+           <div class="numbersbox">
+             <div class="numbersbox1"><img src="assests/h1-process-img-1.png" alt="">
+             <h2 class="nb1text">Contact Us</h2></div>
+             <div class="numbersbox1"><img src="assests/h1-process-img-2.png" alt="">
+               <h2 class="nb1text">Make An Order</h2></div>
+             <div class="numbersbox1"><img src="assests/h1-process-img-3.png" alt="">
+               <h2 class="nb1text">We Arrive <br> Within In 1 Hour</h2></div>
+             <div class="numbersbox1"><img src="assests/h1-process-img-4.png" alt="">
+               <h2 class="nb1text">Track & Trace</h2></div></div>
+           </div>
+         </div>
+       </div><br><hr><br>
+
+  <!-- TEAM -->
+
+  <div id="teamsec" class="teamheader">
+    <h1 id="meetteam" class="serviceh2">Meet Our Team</h1>
+  </div>
+  <div class="teamcontainer">
+    <div class="slider">
+      <div class="teamslide">
+        <img src="https://avatars.mds.yandex.net/i?id=decb3b579247633928758044a76a27dd5b9ba62b-5233602-images-thumbs&n=13" alt="Image 1" width="50%"  height="50%px" >
+        <h2 class="teamh2">Karen Newton</h2>
+        <h6 class="teamh6">Customer Service Manager</h6>
+      </div>
+      <div class="teamslide">
+        <img src="https://avatars.mds.yandex.net/i?id=4a0da404020a55e957b8b2a3b1beb43b97f3ac6ff08c7a9e-11402781-images-thumbs&n=13" alt="Image 2" width="50%" height="50%px">
+        <h2 class="teamh2">Alexa Simon </h2>
+        <h6 class="teamh6">Team Manager</h6>
+      </div>
+      <div class="teamslide">
+        <img src="https://avatars.mds.yandex.net/i?id=2d97b9ad13294b277e31aa0a452ec841ea7054e6-8199736-images-thumbs&n=13" alt="Image 3" width="50%"  height="50%px" >
+        <h2 class="teamh2">Zendaya Korls</h2>
+        <h6 class="teamh6">Head Of Department</h6>
+      </div>
+      <div class="teamslide">
+        <img src="https://avatars.mds.yandex.net/i?id=ce4d520d53659de8df21bec9d2fd4a1b7d443d38-7546007-images-thumbs&n=13" alt="Image 3" width="50%" height="50%px" >
+        <h2 class="teamh2">Alice Neil</h2>
+        <h6 class="teamh6">Ceo</h6>
+      </div>
+  
+      <!-- Add more slides here -->
+      <a class="slideprev" onclick="prevSlide()">&#10094;</a>
+      <a class="slidenext" onclick="nextSlide()">&#10095;</a>
+    </div>
+  </div>
+ <br><hr><br>
+    
+    
+  <!-- FAQS -->
+  <div id="faqssec" class="faqshead">
+    <h1 class="faqsh5">FAQ's</h1>
+  </div>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          What types of items can I send using your courier service?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">We handle a wide range of items, including documents, parcels, packages, and even
+          fragile or sensitive materials. However, there are restrictions on hazardous materials and certain oversized
+          items.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          What are your delivery timeframes?
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Delivery times vary depending on the destination and service chosen. We offer
+          options for express delivery (typically within 1-2 days) and standard delivery (3-5 days for domestic, longer
+          for international).</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          What happens if my package is lost or damaged?
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">While rare, if your package is lost or damaged during transit, we have a claims
+          process in place. Please contact our customer service team as soon as possible so we can assist you in filing
+          a claim and resolving the issue promptly.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          How do I calculate shipping costs?
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Shipping costs are based on factors such as the size and weight of the package, the
+          shipping destination, and the selected service level (express or standard). You can obtain a quote online or
+          through our customer service for accurate pricing.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+          What payment methods do you accept?
+        </button>
+      </h2>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">We accept various payment methods, including credit cards, debit cards, and
+          electronic fund transfers. Payment options may vary depending on the region and specific service.</div>
+      </div>
+    </div>
+  </div><br><hr><br>
+   
+
+  <!-- Pricepackages -->
+  <div id="pricesec" class="pricediv">
+    <h1 class="pricehead">Price Packages</h1>
+  </div>
+  <div class="container text-center">
+    <div class="row">
+      <div id="coloredcol1" class="col"></div>
+      <div id="coloredcol" class="col "></div>
+      <div id="coloredcol" class="col "></div>
+      <div id="coloredcol" class="col "></div>
+      <div id="coloredcol" class="col "></div>
+    </div>
+    <div class="row">
+      <div id="column1" class="col">
+        <h3 id="specialcol1" class="colh3">Save Up to 50%
+          Choose Plan</h3>
+      </div>
+      <div id="column1" class="col">
+        <h3 id="specialcol1" class="colh3">Money Saver
+          FREE </h3>
+      </div>
+      <div id="column1" class="col">
+        <h3 id="specialcol1"  class="colh3">Money Saver
+          FREE </h3>
+      </div>
+      <div id="column1" class="col">
+        <h3 id="specialcol1" class="colh3">Corporate Plan
+          $399 / month </h3>
+      </div>
+      <div id="column1" class="col">
+        <h3 id="specialcol1" class="colh3">Long-term Plan
+          $599 / month </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">Moving Services</div>
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">4 Specialties</div>
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">8 Specialties</div>
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">6 Specialties</div>
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">8 Specialties</div>
+    </div> 
+    <div class="row ">
+      <div id="specialcol" class="col ">Handymen Services</div>
+      <div id="specialcol" class="col"><i class="fa-solid fa-x" style="color: #000000;"></i></div>
+      <div id="specialcol" class="col"><i class="fa-solid fa-x" style="color: #000000;"></i></div>
+      <div id="specialcol" class="col"><i class="fa-solid fa-x" style="color: #000000;"></i></div>
+      <div id="specialcol" class="col">1 Time a year</div>
+    </div>
+    <div class="row">
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">Courier Services</div>
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">1 Time a Year</div>
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">5 Time a Year</div>
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">20 Time a Year</div>
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">unlimited</div>
+    </div>
+    <div class="row">
+      <div id="specialcol" class="col">Free Delivery</div>
+      <div id="specialcol" class="col"><i class="fa-solid fa-check" style="color: #050505;"></i></div>
+      <div id="specialcol" class="col"><i class="fa-solid fa-check" style="color: #050505;"></i></div>
+      <div id="specialcol" class="col">Guarantee</div>
+      <div id="specialcol" class="col">Guarantee</div>
+    </div>
+    <div class="row">
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">Track Services</div>
+      <div id="specialcol" class="col bg-secondary bg-opacity-10"><i class="fa-solid fa-x" style="color: #000000;"></i></div>
+      <div id="specialcol" class="col bg-secondary bg-opacity-10"><i class="fa-solid fa-x" style="color: #000000;"></i></div>
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">1 Year Warranty</div>
+      <div id="specialcol" class="col bg-secondary bg-opacity-10">3 Year Warranty</div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col "><button class="pricepurchasebtn">Purchase</button></div>
+      <div class="col "><button class="pricepurchasebtn">Purchase</button></div>
+      <div class="col "><button class="pricepurchasebtn">Purchase</button></div>
+      <div class="col "><button class="pricepurchasebtn">Purchase</button></div>
+      <div class="col "><button class="pricepurchasebtn">Purchase</button></div>
+    </div>
+  </div><br><hr><br><br>
+
+    <!-- SHOP -->
+
+    <div id="productsec" class="productcontainer">
+      <div class="productcarousel-inner">
+       <div class="productcarousel-item active ">
+         <div class="productcarousel-caption  d-md-block">
+           <h5 id="producth5"  >Shop Now</h5>
+           <h1 id="producth1" >Products
+           </h1>
+           <img  class="productcaption-img1" src="assests/separator-2.png" alt="" width="80%" ></div></div></div></div><br><br><br>
+
+           <div class="productcontainer2">
+            <!-- PRODUCT1 -->
+          <div class="productcard">
+            <div class="productcard-img">
+              <div class="productimg"><img src="https://avatars.mds.yandex.net/i?id=d9c4856916cd9c55add8cfa3d75e444bc48c6f59-10918338-images-thumbs&n=13" alt="" width="200px"></div></div>
+            <div class="productcard-title">Boxes</div>
+            <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <hr class="productcard-divider">
+            <div class="productcard-footer">
+                <div class="productcard-price"><span>$</span> 237.99</div>
+                <button class="productcard-btn" onclick="addToCartAlert()">
+                  <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+                </button>
+            </div>
+        </div>
+          <!-- PRODUCT2 -->
+          <div class="productcard">
+            <div class="productcard-img">
+              <div class="productimg"><img src="https://avatars.mds.yandex.net/i?id=dca65e0180aa78fca59883cff61769e77eeceefd-12410808-images-thumbs&n=13" alt="" width="200px"></div></div>
+            <div class="productcard-title">Solution tape</div>
+            <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <hr class="productcard-divider">
+            <div class="productcard-footer">
+                <div class="productcard-price"><span>$</span> 163.45</div>
+                <button class="productcard-btn" onclick="addToCartAlert()">
+                  <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+                </button>
+            </div>
+        </div>
+         <!-- PRODUCT3 -->
+         <div class="productcard">
+          <div class="productcard-img">
+            <div class="productimg"><img src="https://avatars.mds.yandex.net/i?id=5c7d28bbe2b21a8828022abc7d7b4921155fc678-4141662-images-thumbs&n=13" alt="" width="200px"></div></div>
+          <div class="productcard-title">Aid Box</div>
+          <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          <hr class="productcard-divider">
+          <div class="productcard-footer">
+              <div class="productcard-price"><span>$</span> 1.99</div>
+              <button class="productcard-btn" onclick="addToCartAlert()">
+                <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+              </button>
+          </div>
+        </div>
+         <!-- PRODUCT4 -->
+         <div class="productcard">
+          <div class="productcard-img">
+            <div class="productimg"><img src="https://avatars.mds.yandex.net/i?id=93c366c607e17b6326c7d8bd804a726f517c322e783cba35-3691581-images-thumbs&n=13" alt="" width="200px"></div></div>
+          <div class="productcard-title">Food Variety </div>
+          <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          <hr class="productcard-divider">
+          <div class="productcard-footer">
+              <div class="productcard-price"><span>$</span> 249.45</div>
+              <button class="productcard-btn" onclick="addToCartAlert()">
+                <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+              </button>
+          </div>
+        </div>
+         <!-- PRODUCT5 -->
+         <div class="productcard">
+          <div class="productcard-img">
+            <div class="productimg"><img src="https://avatars.mds.yandex.net/i?id=4f5aa6a8ef9275b830a08386f09ce641b05480a9-4034411-images-thumbs&n=13" alt="" width="200px"></div></div>
+          <div class="productcard-title">Solid Chains</div>
+          <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          <hr class="productcard-divider">
+          <div class="productcard-footer">
+              <div class="productcard-price"><span>$</span> 312.99</div>
+              <button class="productcard-btn" onclick="addToCartAlert()">
+                <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+              </button>
+          </div>
+        </div>
+         <!-- PRODUCT6 -->
+         <div class="productcard">
+          <div class="productcard-img">
+            <div class="productimg"><img src="https://avatars.mds.yandex.net/i?id=0f4a7df01248b9ffd862e5341058bb99e0fee2e0-5360359-images-thumbs&n=13" alt="" width="200px"></div></div>
+          <div class="productcard-title">All Size PaperBags</div>
+          <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          <hr class="productcard-divider">
+          <div class="productcard-footer">
+              <div class="productcard-price"><span>$</span> 123.45</div>
+              <button class="productcard-btn" onclick="addToCartAlert()">
+                <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+              </button>
+          </div>
+        </div>
+        </div><br><hr><br>
+
+
+   <!-- CONTACT US -->
+   <div id="contactsec" class="contactdiv">
+    <h1 class="contacthead">Contact us</h1>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28928.09784460956!2d67.03835374087417!3d24.99970036456119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb341d26f218b8f%3A0xd9b660108c87a6b9!2sThe%20Courier%20Guy%20(Skynet%20%26%20DHL%20Courier%20Services)!5e0!3m2!1sen!2s!4v1721569252289!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="contactinfo">
+  <div class="contact1"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRxQR5onnZ3JxJAXlhNyUUm4G_NM6pRJJKztrMcBG0SBNLQCVx" alt="call-img" width="50px " style="margin: auto ; display: flex; padding-top: 40px;">
+  <h3 class="contacth3">Call: 7784-786-34</h3>
+  <p class="contactpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Volupta.</p>
+  <h6 class="contacth6">Working hours 08:00 - 22:00</h6>
+
+</div>
+  <div class="contact2">
+    <h3 class="ratecontacth3">Please Rate Our Service</h3>
+    <div class="contactrating">
+      <form class="contactrating-form">
+        <label for="super-happy" class="lb">
+      <input type="radio" name="rating" class="super-happy" id="super-happy" value="super-happy">
+      <svg class="svg" viewBox="0 0 24 24"><path d="M12,17.5C14.33,17.5 16.3,16.04 17.11,14H6.89C7.69,16.04 9.67,17.5 12,17.5M8.5,11A1.5,1.5 0 0,0 10,9.5A1.5,1.5 0 0,0 8.5,8A1.5,1.5 0 0,0 7,9.5A1.5,1.5 0 0,0 8.5,11M15.5,11A1.5,1.5 0 0,0 17,9.5A1.5,1.5 0 0,0 15.5,8A1.5,1.5 0 0,0 14,9.5A1.5,1.5 0 0,0 15.5,11M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path></svg>
+      </label>
+        <label for="neutral" class="lb">
+      <input type="radio" name="rating" class="neutral" id="neutral" value="neutral">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="0 0 24 24"><path d="M8.5,11A1.5,1.5 0 0,1 7,9.5A1.5,1.5 0 0,1 8.5,8A1.5,1.5 0 0,1 10,9.5A1.5,1.5 0 0,1 8.5,11M15.5,11A1.5,1.5 0 0,1 14,9.5A1.5,1.5 0 0,1 15.5,8A1.5,1.5 0 0,1 17,9.5A1.5,1.5 0 0,1 15.5,11M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M9,14H15A1,1 0 0,1 16,15A1,1 0 0,1 15,16H9A1,1 0 0,1 8,15A1,1 0 0,1 9,14Z"></path></svg>
+      </label>
+        <label for="super-sad" class="lb">
+      <input type="radio" name="rating" class="super-sad" id="super-sad" value="super-sad">
+      <svg class="svg" viewBox="0 0 24 24"><path d="M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M16.18,7.76L15.12,8.82L14.06,7.76L13,8.82L14.06,9.88L13,10.94L14.06,12L15.12,10.94L16.18,12L17.24,10.94L16.18,9.88L17.24,8.82L16.18,7.76M7.82,12L8.88,10.94L9.94,12L11,10.94L9.94,9.88L11,8.82L9.94,7.76L8.88,8.82L7.82,7.76L6.76,8.82L7.82,9.88L6.76,10.94L7.82,12M12,14C9.67,14 7.69,15.46 6.89,17.5H17.11C16.31,15.46 14.33,14 12,14Z"></path></svg>
+      </label></form></div>
+  </div>
+</div>
+
+    </div></div><br><br>
+    
+   <!-- FOOTER -->
+   <footer>
+    <div class="footercontainer">
+      <div class="footerrow">
+        <div class="footercol-md-2">
+          <h4 class=" footerh4">About Us</h4>
+          <ul class="footerul">
+          <li class="footerli" ><a class="footera" href="#aboutsec">	About Us</a></li>
+          <li  class="footerli"><a  class="footera" href="#teamsec">Our Team</a></li>
+          <li  class="footerli"><a  class="footera"  href="#processsec">Our Process</a></li> 
+          <li  class="footerli"><a  class="footera"  href="#pricesec">	Pricing Plans</a></li> 
+          <li  class="footerli"><a  class="footera"  href="#servicesec">Our Services</a></li> 
+        </ul>
+        </div>
+        <div class="footercol-md-2">
+          <h4 class=" footerh4">Useful information </h4>
+          <ul class="footerul">
+            <li class="footerli" ><a class="footera" href="#carouselExampleIndicators">Home</a></li>
+            <li  class="footerli"><a  class="footera" href="#productsec">Product List</a></li>
+            <li  class="footerli"><a  class="footera"  href="#contactsec">Get In Touch</a></li>
+            <li  class="footerli"><a  class="footera"  href="#faqssec">FAQ's</a></li>
+            <li  class="footerli"><a  class="footera"  href="#clientsec">Our clients</a></li>
+          </ul>
+        </div>
+        <div class="footercol-md-8">
+          <div class="fform-container">
+            <form class="fform" onsubmit="return validateForm()">
+              <div class="fform-group">
+                <label for="email"> Email</label>
+                <input required="" name="email" id="email" type="text">
+                <span id="email-error" style="color: rgb(255, 183, 0);"></span>
+              </div><br>
+              <div class="fform-group">
+                <label for="textarea">How Can We Help You?</label>
+                <textarea required="" cols="50" rows="10" id="textarea" name="textarea"></textarea>
+                <span id="textarea-error" style="color: rgb(255, 183, 0);"></span>
+              </div>
+              <button type="submit" class="fform-submit-btn">Submit</button>
+              <span id="form-error" style="color: rgb(255, 183, 0);"></span>
+            </form>
+          </div>
+        </div>
+      </div><hr>
+      <div class="footerrow">
+        <div class="footercol-md-6">
+          <img class="footlogo" src="assests/logo.png" alt="logo" width="300px" height="150px">
+        </div>
+        <div class="footercol-md-6">
+          <h4 class=" footerh4">About Service </h4>
+          <p class="footerabout">Our mission is to be the most trusted and efficient courier service , delivering packages and parcels with precision and care. We strive to build long-term relationships with our customers, understanding their unique needs and exceeding their expectations.</p></div></div><hr>
+          <div class="footerrow text-center">
+        <div class="footercol-md-12 ">
+      <p class="footercopyright">Copyright &copy; 2023 Quick Route Courier Service. All rights reserved.</p></div></div>
+    </div>
+  </footer>
+
+
+  <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="clzptt2v603jhnibg52ww2gq9"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+
+    </script>
+  <script src="web.js"></script>
+  <script>
+  let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function prevSlide() {
+      showSlides(slideIndex -= 1);
+    }
+    
+    function nextSlide() {
+      showSlides(slideIndex += 1);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("teamslide");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length ; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+
+
+      //scroll
+      ScrollReveal({ 
+        //reset: true,
+        distance:"100px",
+        duration:2500,
+        delay:400
+        
+        
+       });
+
+       //scroll behaviour
+       ScrollReveal().reveal('.serviceh1,.sercard', { delay: 300 , origin:"left"});
+       ScrollReveal().reveal('#navbarSupportedContent,#abth5,#abth1', { delay: 300 , origin:"top" ,interval:200});
+       ScrollReveal().reveal('.clienth5,.reviewh1,.clientpara,.faqsh5,.footerul', { delay: 500 , origin:"left"}); 
+       ScrollReveal().reveal('.clienth5,.reviewh1,.clientpara,.blurcards', { delay: 600 , origin:"left"}); 
+       ScrollReveal().reveal('.reviewseparator,.sercontent,.introcontainer,.reviewcard,.introimg', { delay: 500 , origin:"bottom" , interval:150});
+       ScrollReveal().reveal('.accordion-item,.container,.contactinfo,.footlogo,.fform-container,.abtbutton_lg,.numbersbox1,.productcard', { delay: 600 , origin:"bottom",interval:200});
+       ScrollReveal().reveal('.pricehead,.contacthead,.footerabout,.abtcaption-img1,.abtcaption-img2,.abtslidh5,.abtslidh1,.productcaption-img1', { delay: 600 , origin:"left",interval:200});
+       ScrollReveal().reveal('iframe,.footerh4,.ordercontainer,#producth5,#producth1,#meetteam,.productimg,.productheadings', { delay: 600 , origin:"top"});
+       ScrollReveal().reveal('.footercopyright', { delay: 700 , origin:"right", distance:"70px"});
+
+    }
+    
+
+
+    </script>
+</body>
+
+</html>

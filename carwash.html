@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CAR WASH SERVICE/QUICK ROUTE SERVICE HUB</title>
+  <link rel="stylesheet" href="servicestyle.css">
+  <link rel="shortcut icon" href="assests/Black_and_White_Bold_Typographic_Car_Wash_Logo-removebg-preview.png"
+    type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<style>
+  .slideh1 {
+    color: #ffffff;
+    font-size: 5rem;
+  }
+
+  .slideh12 {
+    color: #ffffff;
+    font-size: 6rem;
+    font-weight: bolder;
+    animation: swipeUp 2s ease-in-out;
+  }
+
+  .topdiv {
+    background-color: #0779eb;
+    top: 30%;
+
+  }
+
+  #accordionFlushExample {
+    background-color: rgba(0, 136, 255, 0.388);
+  }
+
+  .servicehead {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .serviceh1 {
+    color: rgb(255, 255, 255);
+  }
+
+  .bgdiv {
+    background-image: url(https://avatars.mds.yandex.net/i?id=f06519b6668683a5a4b988587243b2481c3d778146ba54bc-5383290-images-thumbs&n=13);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+  }
+
+         *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        iframe {
+            aspect-ratio: 16/9;
+        }
+
+        .video-container {
+            margin: 2rem;
+            max-height: 300px;
+        }
+
+       
+      
+
+        main {
+            display: grid;
+            place-items: center;
+            /* min-height: 100vh; */
+        }
+
+        .abtslidercontainer {
+            display: grid;
+            place-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            --position: 50%;
+            width: 80%;
+            
+        }
+
+        .image-container {
+            max-width: 800px;
+            /* max-height: 90vh; */
+            aspect-ratio: 0/1;
+        }
+
+        .abtslider-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+            display: block;
+            max-width: 100%;
+        }
+
+        .image-before {
+            position: absolute;
+            inset: 0;
+            width: var(--position);
+        
+        }
+
+        .abtslider {
+            position: absolute;
+            inset: 0;
+            cursor: pointer;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .abtslider:focus-visible~.abtslider-button {
+            outline: 5px solid black;
+            outline-offset: 3px;
+        }
+
+        .abtslider-line {
+            position: absolute;
+            inset: 0;
+            width: .2rem;
+            height: 100%;
+            background-color: #fff;
+            /* z-index: 10; */
+            left: var(--position);
+            transform: translateX(-50%);
+            pointer-events: none;
+        }
+
+        .abtslider-button {
+            position: absolute;
+            background-color: #fff;
+            color: black;
+            padding: .5rem;
+            border-radius: 100vw;
+            display: grid;
+            place-items: center;
+            top: 50%;
+            left: var(--position);
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            /* z-index: 100; */
+            box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+        }
+</style>
+
+<body>
+  <div class="topdiv">
+    <div class="topcontainer">
+      <div class="toprow">
+        <div>
+          <p class="toppara"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Phone: 555-555-5555</p>
+
+        </div>
+        <div>
+          <p class="toppara"><i class="fa-regular fa-clock" style="color: #ffffff;"></i> Monday - Friday: 9am - 5pm/
+            <br>Closed on Weekend
+          </p>
+        </div>
+        <p class="toppara3">&copy; 2024 ServiceHub. All rights reserved.</p>
+        <button class="cta">
+          <span class="hover-underline-animation"><a href="products.html">Shop now </a> </span>
+          <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+        </button>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar navbar-expand d-flex justify-content-around mt-0">
+    <div class="couriercontainer-fluid ">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
+        <img src="assests/Black_and_White_Bold_Typographic_Car_Wash_Logo-removebg-preview.png" class="img-fluid" alt="logo"
+          width="100px">
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black fw-bolder" href="#carouselExampleIndicators"
+              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-black fw-bolder" href="index.html"> Home page</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="Quick_route_home .html"> Quick Route Home</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="carwash.html">Carwash Service</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="courier.html">Courier Service</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="itservice .html">Information Technology Service</a>
+              </li>
+              <li><a class="dropdown-item text-black fw-bolder" href="painthouseservice.html">Home Decoration Service</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="Handyman service .html">Handyman 
+                Service</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item">
+            <a id="shownli" class="nav-link text-black fw-bolder" href="#aboutsec">About US</a>
+          </li>
+          <li class="nav-item">
+            <a id="shownli" class="nav-link text-black fw-bolder" href="#servicesec">Service</a>
+          </li>
+          <li class="nav-item">
+            <a id="shownli" class="nav-link text-black fw-bolder" href="#contactsec">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black fw-bolder" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a id="hiddenli" class="dropdown-item text-black fw-bolder" href="#aboutsec">about us</a></li>
+              <li><a id="hiddenli" class="dropdown-item text-black fw-bolder" href="#servicesec">Service</a></li>
+              <li><a id="hiddenli" class="dropdown-item text-black fw-bolder" href="#contactsec">Contact us</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="#pricesec">Price Packaging</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="#testimonialsec">Our Clients</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="#faqssec">FAQ's</a></li>
+              <li><a class="dropdown-item text-black fw-bolder" href="#productsec">Products</a></li>
+
+
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav><br>
+  <div id="alert-box" class="alert-box">
+    <span id="alert-message"></span>
+    <button id="alert-close" onclick="closeAlert()">OK</button>
+  </div>
+  <!-- CAROUSEL -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <!-- SLIDE1 -->
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+        <img
+          src="https://avatars.mds.yandex.net/i?id=598d498bca2499fbb8fff06dbdc78a0bcc45b9be-9072236-images-thumbs&ref=rim&n=33&w=480&h=320"
+          class=" homeimg vd-block w-100" alt="..." height="600px" style="object-fit: cover;">
+        <div class="carousel-caption  d-md-block">
+          <div>
+            <img id="capimg30per" class="caption-img" src="assests/car dirty.png" alt="" width="30%" height="60%">
+          </div>
+          <div>
+            <img id="capimg30per" class="caption-img1" src="assests/pay 9 get 1 free.png" alt=""><br>
+            <img class="caption-img1" src="assests/blue separator.png" alt="" width="40%" height="30px">
+
+            <h1 class="cwslideh12" class="slideh1 ">Fastest Car Wash
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!-- SLIDE2 -->
+      <div class="carousel-item">
+        <img id="imgslide2"
+          src="https://avatars.mds.yandex.net/i?id=95a2783e251807d1a285e251b504a66c75725531-9604624-images-thumbs&n=13"
+          class=" homeimg d-block w-100" alt="..." height="600px">
+
+        <div class="carousel-caption  d-md-block">
+          <img id="capimg30per" class="caption-img" src="assests/h4-slide-2-img-1.png" alt="" width="70%" height="150px">
+          <h1 class="cwslideh12" class="slideh12 ">First Time Discount</h1>
+        </div>
+      </div>
+      <!-- SLIDE3 -->
+      <div class="carousel-item">
+        <img id="slideimg"
+          src="https://avatars.mds.yandex.net/i?id=1b9e81655a30a52643fb99757bbab43a3b9bd6f7-12202401-images-thumbs&n=13"
+          height="600px" class=" homeimg d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <img id="capimg30per" class="caption-img" src="assests/carplash.png" alt="" width="40%" height="100px">
+          <h1 class="cwslideh12" class="slideh12 ">Car Wash</h1>
+
+
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="bg pattern"></div>
+
+
+  <hr>
+
+  <!-- TOPBUTTON -->
+  <div class="topbutton">
+    <a href="#carouselExampleIndicators">
+      <img class="topimg"
+        src="https://avatars.mds.yandex.net/i?id=dc538375d590d39f19ee57635070d3ad43cafdaf-10594781-images-thumbs&n=13"
+        alt="top img car" width="70px"></a>
+    <p><a href="#carouselExampleIndicators">Go Top</a></p>
+
+  </div>
+
+
+  <!-- service -->
+
+  <div id="servicesec" class="servicehead">
+
+    <h1 class="serviceh1">Our Service</h1>
+  </div>
+
+  <!-- servicedetails -->
+
+  <!--tips-->
+  <div class="bgdiv">
+    <div class="sercontainer2">
+      <img class="tipimg"
+        src="https://avatars.mds.yandex.net/i?id=b8294f6244a00376c87737f756cc3eddab230415-10769069-images-thumbs&n=13"
+        alt="" width="100px">
+      <div class="tip1">
+        <h2 class="tiph2">Car Wash</h2>
+        <p class="tippara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi eum cum consequatur explicabo
+          a, numquam at libero fugit !</p>
+      </div>
+    </div><br>
+
+    <div class="sercontainer2">
+      <img class="tipimg"
+        src="https://avatars.mds.yandex.net/i?id=ed6f0d95fcca4860287a1475a7f848b46ec4ba15-9849146-images-thumbs&n=13"
+        alt="" width="100px">
+      <div class="tip1">
+        <h2 class="tiph2">Wheel Balancing</h2>
+        <p class="tippara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi eum cum consequatur explicabo
+          a, numquam at libero fugit !</p>
+      </div>
+    </div><br>
+
+    <div class="sercontainer2">
+      <img class="tipimg"
+        src="https://avatars.mds.yandex.net/i?id=548140c00522e75b5bc9772f6b07b71e6a0beb68-9065879-images-thumbs&n=13"
+        alt="" width="100px">
+      <div class="tip1">
+        <h2 class="tiph2">Brake Fluid Change</h2>
+        <p class="tippara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi eum cum consequatur explicabo
+          a, numquam at libero fugit !</p>
+      </div>
+    </div><br>
+    <div class="sercontainer2">
+      <img class="tipimg"
+        src="https://avatars.mds.yandex.net/i?id=882f029ff94c4dafe1796d1a1611a2e7dcb37afe-4265079-images-thumbs&n=13"
+        alt="" width="100px">
+      <div class="tip1">
+        <h2 class="tiph2">Car Polishing</h2>
+        <p class="tippara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi eum cum consequatur explicabo
+          a, numquam at libero fugit !</p>
+      </div>
+    </div>
+    <div class="sercontainer2">
+      <img class="tipimg"
+        src="https://avatars.mds.yandex.net/i?id=5449acd834de9cd2da15a12120ce75a2f0ac2ca1-8497455-images-thumbs&n=13"
+        alt="" width="100px">
+      <div class="tip1">
+        <h2 class="tiph2">Free Battery Check</h2>
+        <p class="tippara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi eum cum consequatur explicabo
+          a, numquam at libero fugit !</p>
+      </div>
+    </div><br>
+ 
+    </div>
+
+  </div><br><br>
+
+  <!-- washing -->
+  <div class="washcontainer">
+    <div class="washheadings">
+      <h6 class="washh6">____MODERN EQUIPMENTS</h6>
+      <h1 class="washh1">Professional washing and cleaning of your car</h1>
+      <p class="washpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem id optio deserunt itaque, quidem
+        autem nam adipisci laborum consequatur nisi aliquam voluptatem. Quaerat, minus deleniti cupiditate neque
+        veritatis dolorem ea?</p>
+
+      <h2 class="washh2">Call for book: <span style="color: #0779eb;">8-800-10-500</span> </h2>
+
+    </div>
+    <div class="washrow">
+      <img class="washimg"
+        src="https://avatars.mds.yandex.net/i?id=31a5bebccbf278c48f0631ed4068346aae2d0673-7863844-images-thumbs&n=13"
+        alt="An image" style="width: 500px; height: 400px;">
+    </div>
+
+  </div>
+
+  <!--about-->
+
+  <div id="aboutsec" class="aboutdiv">
+    <div class="aboutheadings">
+      <h5 class="abth5">__________ DRY CLEANING</h5>
+      <h1 class="abth1">Deep interior cleaning after flooding</h1><br>
+      <button class="abtbtn"><a href="#contactsec">Get In Touch</a>
+        
+      </button>
+    </div>
+
+    <main>
+      <div class="abtslidercontainer">
+          <div class="image-container">
+              <img class="image-before abtslider-image"
+                  src="assests/Before_01.jpg"
+                  alt="color photo" />
+              <img class="image-after abtslider-image"
+                  src="assests/After_01.jpg"
+                  alt="black and white" />
+          </div>
+          <!-- step="10" -->
+          <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+              class="abtslider" />
+          <div class="abtslider-line" aria-hidden="true"></div>
+          <div class="abtslider-button" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  viewBox="0 0 256 256">
+                  <rect width="256" height="256" fill="none"></rect>
+                  <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="16"></line>
+                  <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="16"></line>
+                  <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="16"></polyline>
+                  <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="16"></line>
+                  <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="16"></polyline>
+              </svg>
+          </div>
+      </div>
+  </main>
+
+  </div><br>
+  <hr><br>
+  <!-- Pricepackages -->
+  <div id="pricesec" class="pricediv2">
+    <h6 class="priceh6">WASHING PRICE</h6>
+    <h1 class="priceh1">Choose Your Plan</h1>
+    <p class="pricepara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem id optio deserunt itaque, quidem
+      autem nam adipisci laborum consequatur nisi aliquam voluptatem. Quaerat, minus deleniti cupiditate neque veritatis
+      dolorem ea?</p>
+  </div>
+  <div class="cars">
+    <div class="car1"><img src="http://aqualine.like-themes.com/wp-content/uploads/2020/02/car_01.png" alt="small sedan"
+        width="150px">
+      <p class="carname">Small Sedan</p>
+    </div>
+    <div class="car1"><img src="http://aqualine.like-themes.com/wp-content/uploads/2020/02/car_03.png" alt="Pickup"
+        width="150px">
+      <p class="carname">Pickup</p>
+    </div>
+    <div class="car1"><img src="http://aqualine.like-themes.com/wp-content/uploads/2020/02/car_02.png" alt="SUV"
+        width="150px">
+      <p class="carname">SUV</p>
+    </div>
+    <div class="car1"><img src="http://aqualine.like-themes.com/wp-content/uploads/2020/02/car_04.png" alt="Minibus"
+        width="150px">
+      <p class="carname">Minibus</p>
+    </div>
+  </div>
+  <hr><br>
+  <!-- plans -->
+  <div class="planingcontainer">
+    <div class="plan">
+      <div class="inner">
+        <span class="pricing">
+          <span>
+            $49 <small>/ m</small>
+          </span>
+        </span>
+        <p class="plantitle">Professional</p>
+        <p class="planinfo">This plan is for those who have a team already and running a large business.</p>
+        <ul class="planfeatures">
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span><strong>20</strong> team members</span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>Plan <strong>team meetings</strong></span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>File sharing</span>
+          </li>
+        </ul>
+        <div class="action">
+          <a class="planbutton" href="#">
+            Choose plan
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- plan2 -->
+    <div class="plan">
+      <div class="inner">
+        <span class="pricing">
+          <span>
+            $49 <small>/ m</small>
+          </span>
+        </span>
+        <p class="plantitle">Professional</p>
+        <p class="planinfo">This plan is for those who have a team already and running a large business.</p>
+        <ul class="planfeatures">
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span><strong>20</strong> team members</span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>Plan <strong>team meetings</strong></span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>File sharing</span>
+          </li>
+        </ul>
+        <div class="action">
+          <a class="planbutton" href="#">
+            Choose plan
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- plan3 -->
+    <div class="plan">
+      <div class="inner">
+        <span class="pricing">
+          <span>
+            $49 <small>/ m</small>
+          </span>
+        </span>
+        <p class="plantitle">Professional</p>
+        <p class="planinfo">This plan is for those who have a team already and running a large business.</p>
+        <ul class="planfeatures">
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span><strong>20</strong> team members</span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>Plan <strong>team meetings</strong></span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>File sharing</span>
+          </li>
+        </ul>
+        <div class="action">
+          <a class="planbutton" href="#">
+            Choose plan
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- plan4 -->
+
+    <div class="plan">
+      <div class="inner">
+        <span class="pricing">
+          <span>
+            $49 <small>/ m</small>
+          </span>
+        </span>
+        <p class="plantitle">Professional</p>
+        <p class="planinfo">This plan is for those who have a team already and running a large business.</p>
+        <ul class="planfeatures">
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span><strong>20</strong> team members</span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>Plan <strong>team meetings</strong></span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+              </svg>
+            </span>
+            <span>File sharing</span>
+          </li>
+        </ul>
+        <div class="action">
+          <a class="planbutton" href="#">
+            Choose plan
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <hr><br>
+  <!-- FAQS -->
+  <div id="faqssec" class="faqshead">
+    <h1 class="faqsh5">FAQ's</h1>
+  </div>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          How often should I wash my car?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">It is recommended to wash your car every 1-2 weeks, or more often if you drive in
+          dirty or salty conditions.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          What types of vehicles can you wash?
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Car washes can typically handle most types of vehicles, including cars, SUVs, and
+          minivans. However, some washes may not be able to accommodate larger vehicles like RVs or trucks with lift
+          kits.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          What is an Unlimited Membership?
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">An Unlimited Membership is a car wash membership program that allows you to wash
+          your car as often as you like for a fixed monthly fee.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          Is the wash safe for convertibles?
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Yes, car washes are safe for convertibles as long as the top is securely fastened
+          and closed.</div>
+      </div>
+    </div>
+
+
+  </div>
+  </div><br><br>
+
+  <!-- TESTIMONIALS -->
+
+
+  <!-- Testimonials container -->
+  <div id="testimonialsec" class="testimonials-container">
+
+    <div class="testimonialheadings">
+      <h5 class="testih5">__________ TESTIMONIALS</h5>
+      <h1 class="testih1"> What our clients say</h1><br>
+    </div>
+    <!-- Slider wrapper -->
+    <div class="slider-wrapper">
+      <!-- Slider -->
+      <div class="slider">
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+          <img class="testiimg"
+            src="https://avatars.mds.yandex.net/i?id=decb3b579247633928758044a76a27dd5b9ba62b-5233602-images-thumbs&n=13"
+            alt="Client 1">
+          <p class="testpara">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor,
+            vestibulum magna sed, convallis ex."</p><br>
+          <h4>John Doe <br> CEO of ABC Company</h4>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+          <img class="testiimg"
+            src="https://avatars.mds.yandex.net/i?id=4a0da404020a55e957b8b2a3b1beb43b97f3ac6ff08c7a9e-11402781-images-thumbs&n=13"
+            alt="Client 2">
+          <p class="testpara">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor,
+            vestibulum magna sed, convallis ex."</p><br>
+          <h4>Jane Smith <br>Marketing Manager at DEF Agency</h4>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+          <img class="testiimg"
+            src="https://avatars.mds.yandex.net/i?id=2d97b9ad13294b277e31aa0a452ec841ea7054e6-8199736-images-thumbs&n=13"
+            alt="Client 3">
+          <p class="testpara">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor,
+            vestibulum magna sed, convallis ex."</p><br>
+          <h4>Bob Johnson <br> Entrepreneur</h4>
+        </div>
+        <!-- Testimonial 4 -->
+        <div class="testimonial">
+          <img class="testiimg"
+            src="https://avatars.mds.yandex.net/i?id=ce4d520d53659de8df21bec9d2fd4a1b7d443d38-7546007-images-thumbs&n=13"
+            alt="Client 4">
+          <p class="testpara">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor,
+            vestibulum magna sed, convallis ex."</p><br>
+          <h4>Bob Johnson <br> Entrepreneur</h4>
+        </div>
+      </div><br>
+      <!-- Slider navigation -->
+      <div class="slider-nav">
+        <button class="prev"></button>
+        <button class="next"></button>
+      </div>
+    </div>
+  </div><br>
+  <hr><br>
+
+  <!-- products -->
+  <div id="productsec" class="productheadings">
+    <h5 class="producth5">ONLINE STORE</h5>
+    <h1 class="producth1"> Popular Products</h1><br>
+  </div>
+  <div class="productcontainer2">
+    <!-- PRODUCT1 -->
+    <div class="productcard">
+      <div class="productcard-img">
+        <div class="productimg"><img src="assests/tire.jpg" alt="" width="200px"></div>
+      </div>
+      <div class="productcard-title">Car Wheel</div>
+      <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <hr class="productcard-divider">
+      <div class="productcard-footer">
+        <div class="productcard-price"><span>$</span> 237.99</div>
+        <button class="productcard-btn" onclick="addToCartAlert()">
+          <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+        </button>
+        
+      </div>
+    </div>
+    <!-- PRODUCT2 -->
+    <div class="productcard">
+      <div class="productcard-img">
+        <div class="productimg"><img src="assests/aqualine.jpg" alt="" width="200px"></div>
+      </div>
+      <div class="productcard-title">Aqualine Diesel Oil</div>
+      <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <hr class="productcard-divider">
+      <div class="productcard-footer">
+        <div class="productcard-price"><span>$</span> 163.45</div>
+        <button class="productcard-btn" onclick="addToCartAlert()">
+          <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+        </button>
+        <div id="alert-box" class="alert-box">
+          <span id="alert-message"></span>
+          <button id="alert-close" onclick="closeAlert()">OK</button>
+        </div>
+      </div>
+    </div>
+    <!-- PRODUCT3 -->
+    <div class="productcard">
+      <div class="productcard-img">
+        <div class="productimg"><img src="assests/car brake.jpg" alt="" width="200px"></div>
+      </div>
+      <div class="productcard-title">Car Brake System</div>
+      <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <hr class="productcard-divider">
+      <div class="productcard-footer">
+        <div class="productcard-price"><span>$</span> 1.99</div>
+        <button class="productcard-btn" onclick="addToCartAlert()">
+          <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+        </button>
+        <div id="alert-box" class="alert-box">
+          <span id="alert-message"></span>
+          <button id="alert-close" onclick="closeAlert()">OK</button>
+        </div>
+      </div>
+    </div>
+    <!-- PRODUCT4 -->
+    <div class="productcard">
+      <div class="productcard-img">
+        <div class="productimg"><img src="assests/diesel.jpg" alt="" width="200px"></div>
+      </div>
+      <div class="productcard-title">Canister For Liquid </div>
+      <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <hr class="productcard-divider">
+      <div class="productcard-footer">
+        <div class="productcard-price"><span>$</span> 249.45</div>
+        <button class="productcard-btn" onclick="addToCartAlert()">
+          <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+        </button>
+        <div id="alert-box" class="alert-box">
+          <span id="alert-message"></span>
+          <button id="alert-close" onclick="closeAlert()">OK</button>
+        </div>
+      </div>
+    </div>
+    <!-- PRODUCT5 -->
+    <div class="productcard">
+      <div class="productcard-img">
+        <div class="productimg"><img src="assests/baby carseat.jpg" alt="" width="200px"></div>
+      </div>
+      <div class="productcard-title">CAr Baby Seat</div>
+      <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <hr class="productcard-divider">
+      <div class="productcard-footer">
+        <div class="productcard-price"><span>$</span> 312.99</div>
+        <button class="productcard-btn" onclick="addToCartAlert()">
+          <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+        </button>
+        <div id="alert-box" class="alert-box">
+          <span id="alert-message"></span>
+          <button id="alert-close" onclick="closeAlert()">OK</button>
+        </div>
+      </div>
+    </div>
+    <!-- PRODUCT6 -->
+    <div class="productcard">
+      <div class="productcard-img">
+        <div class="productimg"><img src="assests/tirestack.jpg" alt="" width="200px"></div>
+      </div>
+      <div class="productcard-title">Set Of Wheels With Winter Tires</div>
+      <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <hr class="productcard-divider">
+      <div class="productcard-footer">
+        <div class="productcard-price"><span>$</span> 123.45</div>
+        <button class="productcard-btn" onclick="addToCartAlert()">
+          <i class="fa-solid fa-cart-shopping" style="color: #2671f2;"></i>
+        </button>
+        <div id="alert-box" class="alert-box">
+          <span id="alert-message"></span>
+          <button id="alert-close" onclick="closeAlert()">OK</button>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <hr><br>
+  <!-- contact -->
+  <div id="contactsec">
+    <div class="contactheadings">
+      <h5 class="contacth5">__________ LOCATIONS</h5>
+      <h1 class="contacth1">Car Washing and Care Points</h1><br>
+    </div>
+  </div>
+  <div class="contactdiv2">
+    <div class="columnscontact">
+      <div class="ctncol1">
+        <p class="point"><i class="fa-solid fa-location-dot" style="color: #2a74f4;"></i> Car wash point</p>
+        <p class="pointaddress">Lorem ipsum dolor sit amet consectetur .</p>
+
+        <p class="point"><i class="fa-solid fa-location-dot" style="color: #2a74f4;"></i> Car wash point</p>
+        <p class="pointaddress">Lorem ipsum dolor sit amet consectetur .</p>
+
+        <p class="point"><i class="fa-solid fa-location-dot" style="color: #2a74f4;"></i> Car wash point</p>
+        <p class="pointaddress">Lorem ipsum dolor sit amet consectetur .</p>
+      </div>
+      <div class="ctncol1">
+        <p class="point"><i class="fa-solid fa-location-dot" style="color: #2a74f4;"></i> Car wash point</p>
+        <p class="pointaddress">Lorem ipsum dolor sit amet consectetur .</p>
+
+        <p class="point"><i class="fa-solid fa-location-dot" style="color: #2a74f4;"></i> Car wash point</p>
+        <p class="pointaddress">Lorem ipsum dolor sit amet consectetur .</p>
+      </div>
+    </div>
+
+
+
+    <div class="ctnformdiv">
+      <div class="ctncontainer">
+        <div class="ctnleft">
+          <form class="ctnform">
+            <h2 class="formh2">Apply For <span style="color: #015cfa;">Car Wash</span></h2>
+            <div class="input-block">
+              <input class="ctninput" type="text" id="username" required="" autocomplete="name">
+              <label class="labels" for="username">Username</label>
+            </div>
+            <div class="input-block">
+              <input class="ctninput" type="number" id="phone" required="">
+              <label class="labels" for="phone">Phone-Number</label>
+            </div>
+            <div class="input-block">
+              <input class="ctninput" type="time" id="time" required="">
+              <label class="labels" for="time"></label> <br>
+              <button class="ctnbutton" onclick="checkInput()">Submit</button>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="ctnright">
+          <div class="ctnimg"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+              viewBox="0 0 731.67004 550.61784" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="M0,334.13393c0,.66003,.53003,1.19,1.19006,1.19H730.48004c.65997,0,1.19-.52997,1.19-1.19,0-.65997-.53003-1.19-1.19-1.19H1.19006c-.66003,0-1.19006,.53003-1.19006,1.19Z"
+                fill="#3f3d56"></path>
+              <polygon
+                points="466.98463 81.60598 470.81118 130.55703 526.26809 107.39339 494.98463 57.60598 466.98463 81.60598"
+                fill="#a0616a"></polygon>
+              <circle cx="465.32321" cy="55.18079" r="41.33858" fill="#a0616a"></circle>
+              <polygon
+                points="387.98463 440.60598 394.98463 503.39339 345.98463 496.60598 361.98463 438.60598 387.98463 440.60598"
+                fill="#a0616a"></polygon>
+              <polygon
+                points="578.98463 449.60598 585.98463 512.39339 536.98463 505.60598 552.98463 447.60598 578.98463 449.60598"
+                fill="#a0616a"></polygon>
+              <path
+                d="M462.48463,260.10598c-.66897,0-54.14584,2.68515-89.47714,4.46286-16.72275,.84141-29.45202,15.31527-28.15459,32.00884l12.63173,162.5283,36,1,.87795-131,71.12205,4-3-73Z"
+                fill="#2f2e41"></path>
+              <path
+                d="M619.48463,259.10598s9,69,2,76c-7,7-226.5-5.5-226.5-5.5,0,0,48.15354-69.53704,56.82677-71.51852,8.67323-1.98148,146.67323-8.98148,146.67323-8.98148l21,10Z"
+                fill="#2f2e41"></path>
+              <path id="uuid-91047c5b-47d7-4179-8a16-40bd6d529b28-203"
+                d="M335.12666,172.23337c-8.35907-11.69074-9.10267-25.48009-1.66174-30.79863,7.44093-5.31854,20.24665-.15219,28.60713,11.54383,3.40375,4.62627,5.65012,10.00041,6.55111,15.67279l34.79215,49.9814-19.8001,13.70807-35.7745-48.83421c-5.07753-2.68845-9.43721-6.55406-12.71405-11.27326Z"
+                fill="#a0616a"></path>
+              <path d="M464.98463,112.60598l51-21,96,148s-67,15-90,18c-23,3-49-9-49-9l-8-136Z" fill="#6c63ff">
+              </path>
+              <path
+                d="M526.98463,137.60598l-18.5-57.70866,24,18.20866s68,45,68,64c0,19,21,77,21,77,0,0,23.5,19.5,15.5,37.5-8,18,10.5,15.5,12.5,28.5,2,13-28.5,30.5-28.5,30.5,0,0-7.5-73.5-31.5-73.5-24,0-62.5-124.5-62.5-124.5Z"
+                fill="#3f3d56"></path>
+              <path
+                d="M468.56831,111.13035l-25.08368,9.97563s4,70,8,76c4,6,18,38,18,38v10.42913s-28,8.57087-27,13.57087c1,5,66,19,66,19,0,0-13-40-21-53-8-13-18.91632-113.97563-18.91632-113.97563Z"
+                fill="#3f3d56"></path>
+              <path
+                d="M452.48463,121.10598s-29-4-34,30c-5,34-1.82283,38.5-1.82283,38.5l-8.17717,19.5-27-30-26,17s47,76,66,74c19-2,47-57,47-57l-16-92Z"
+                fill="#3f3d56"></path>
+              <path
+                d="M597.32321,270.14478l-14.83858,209.96121-38.5-1.5s-8.5-198.5-8.5-201.5c0-3,4-20,29-21,25-1,32.83858,14.03879,32.83858,14.03879Z"
+                fill="#2f2e41"></path>
+              <path
+                d="M541.48463,484.10598s20-6,23-2c3,4,20,6,20,6l5,49s-14,10-16,12-55,4-56-8c-1-12,14-27,14-27l10-30Z"
+                fill="#2f2e41"></path>
+              <path
+                d="M394.48463,470.10598s6-5,8,9c2,14,9,37-1,40-10,3-110,4-110-5v-9l9-7,18.00394-2.869s34.99606-32.131,38.99606-32.131c4,0,17,13,17,13l20-6Z"
+                fill="#2f2e41"></path>
+              <path
+                d="M505.98463,77.60598s-20-24-28-22-3,5-3,5l-20-22s-16-6-31,13c0,0-9-16,0-25,9-9,12-8,14-13,2-5,16-9,16-9,0,0-.80315-7.19685,3.59843-3.59843s15.3937,3.59843,15.3937,3.59843c0,0,.06299-4,4.53543,0,4.47244,4,9.47244,2,9.47244,2,0,0,0,6.92126,3.5,6.96063,3.5,.03937,9.5-4.96063,10.5-.96063,1,4,8,6,9,18,1,12-4,47-4,47Z"
+                fill="#2f2e41"></path>
+              <g>
+                <path
+                  d="M342.99463,178.84874l-114.2362,78.82694c-3.94205,2.72015-9.36214,1.72624-12.08229-2.21581l-32.16176-46.60891c-2.72015-3.94205-1.7259-9.36208,2.21615-12.08223l114.2362-78.82694c3.94205-2.72015,9.36214-1.72624,12.08229,2.21581l32.16176,46.60891c2.72015,3.94205,1.7259,9.36208-2.21615,12.08223Z"
+                  fill="#fff"></path>
+                <path
+                  d="M312.83914,120.30274l32.16148,46.6085c2.64627,3.83499,1.68408,9.08121-2.15091,11.72749l-56.06388,38.68602c-14.78562-4.04015-28.2774-13.11486-37.66263-26.71596-6.14766-8.9092-9.85314-18.77211-11.26649-28.80885l63.25494-43.6481c3.83499-2.64627,9.08121-1.68408,11.72749,2.15091Z"
+                  fill="#e6e6e6"></path>
+                <path
+                  d="M223.84012,260.20913c-3.0791,0-6.10938-1.46094-7.9873-4.18066l-32.16211-46.60938c-1.4668-2.12695-2.01758-4.7002-1.5498-7.24805,.4668-2.54785,1.89551-4.75879,4.02246-6.22559l114.23535-78.82715c4.39746-3.03223,10.44043-1.92285,13.47363,2.4707l32.16211,46.60938c1.4668,2.12695,2.01758,4.7002,1.5498,7.24805-.4668,2.54688-1.89551,4.75879-4.02148,6.22559l-114.23633,78.82715c-1.67578,1.15527-3.59082,1.70996-5.48633,1.70996Zm82.04785-142.80176c-1.50391,0-3.02344,.44043-4.35254,1.35742l-114.23633,78.82715c-1.6875,1.16309-2.82031,2.91797-3.19141,4.94043-.37109,2.02148,.06543,4.06445,1.22949,5.75l32.16211,46.60938c2.40625,3.48633,7.20215,4.36816,10.69043,1.96094l114.2373-78.82715c1.68652-1.16309,2.81934-2.91797,3.19043-4.94043,.37109-2.02148-.06543-4.06445-1.22949-5.75l-32.16211-46.60938c-1.48926-2.1582-3.89453-3.31836-6.33789-3.31836Z"
+                  fill="#3f3d56"></path>
+                <path
+                  d="M224.6666,236.93718c-2.89521,1.9978-3.6253,5.97848-1.6275,8.87369,1.9978,2.89521,5.97848,3.6253,8.87369,1.6275l11.76134-8.11573c2.89521-1.9978,3.6253-5.97848,1.6275-8.87369-1.9978-2.89521-5.97848-3.6253-8.87369-1.6275l-11.76134,8.11573Z"
+                  fill="#6c63ff"></path>
+                <path
+                  d="M232.63862,171.91114c-4.56802,3.15209-5.71978,9.43286-2.56769,14.00088,3.15209,4.56802,9.43252,5.71972,14.00054,2.56763l18.29546-12.6245c4.56802-3.15209,5.72007-9.43245,2.56797-14.00047-3.15209-4.56802-9.4328-5.72013-14.00082-2.56804l-18.29546,12.6245Z"
+                  fill="#6c63ff"></path>
+              </g>
+              <g>
+                <path
+                  d="M340.25926,185.80874H201.4659c-4.78947,0-8.68608-3.89636-8.68608-8.68583v-56.62834c0-4.78947,3.89661-8.68583,8.68608-8.68583h138.79336c4.78947,0,8.68608,3.89636,8.68608,8.68583v56.62834c0,4.78947-3.89661,8.68583-8.68608,8.68583Z"
+                  fill="#fff"></path>
+                <path
+                  d="M348.69017,120.49482v56.62784c0,4.65939-3.77152,8.43091-8.43091,8.43091h-68.11583c-9.87497-11.72273-15.82567-26.8544-15.82567-43.37931,0-10.82439,2.55172-21.04674,7.08876-30.11034h76.85275c4.65939,0,8.43091,3.77152,8.43091,8.43091Z"
+                  fill="#e6e6e6"></path>
+                <path
+                  d="M340.25907,186.80874H201.4661c-5.34082,0-9.68652-4.34473-9.68652-9.68555v-56.62891c0-5.34082,4.3457-9.68555,9.68652-9.68555h138.79297c5.34082,0,9.68652,4.34473,9.68652,9.68555v56.62891c0,5.34082-4.3457,9.68555-9.68652,9.68555ZM201.4661,112.80874c-4.23828,0-7.68652,3.44727-7.68652,7.68555v56.62891c0,4.23828,3.44824,7.68555,7.68652,7.68555h138.79297c4.23828,0,7.68652-3.44727,7.68652-7.68555v-56.62891c0-4.23828-3.44824-7.68555-7.68652-7.68555H201.4661Z"
+                  fill="#3f3d56"></path>
+                <path
+                  d="M209.87637,166.41564c-3.51759,0-6.37931,2.86172-6.37931,6.37931s2.86172,6.37931,6.37931,6.37931h14.28966c3.51759,0,6.37931-2.86172,6.37931-6.37931s-2.86172-6.37931-6.37931-6.37931h-14.28966Z"
+                  fill="#6c63ff"></path>
+                <path
+                  d="M253.36907,117.42253c-5.55,0-10.06511,4.51536-10.06511,10.06536s4.51511,10.06486,10.06511,10.06486h22.22841c5.55,0,10.06511-4.51486,10.06511-10.06486s-4.51511-10.06536-10.06511-10.06536h-22.22841Z"
+                  fill="#6c63ff"></path>
+              </g>
+              <g>
+                <path
+                  d="M456.25926,381.80874h-138.79336c-4.78947,0-8.68608-3.89636-8.68608-8.68583v-56.62834c0-4.78947,3.89661-8.68583,8.68608-8.68583h138.79336c4.78947,0,8.68608,3.89636,8.68608,8.68583v56.62834c0,4.78947-3.89661,8.68583-8.68608,8.68583Z"
+                  fill="#fff"></path>
+                <path
+                  d="M464.69017,316.49482v56.62784c0,4.65939-3.77152,8.43091-8.43091,8.43091h-68.11583c-9.87497-11.72273-15.82567-26.8544-15.82567-43.37931,0-10.82439,2.55172-21.04674,7.08876-30.11034h76.85275c4.65939,0,8.43091,3.77152,8.43091,8.43091Z"
+                  fill="#e6e6e6"></path>
+                <path
+                  d="M456.25907,382.80874h-138.79297c-5.34082,0-9.68652-4.34473-9.68652-9.68555v-56.62891c0-5.34082,4.3457-9.68555,9.68652-9.68555h138.79297c5.34082,0,9.68652,4.34473,9.68652,9.68555v56.62891c0,5.34082-4.3457,9.68555-9.68652,9.68555Zm-138.79297-74c-4.23828,0-7.68652,3.44727-7.68652,7.68555v56.62891c0,4.23828,3.44824,7.68555,7.68652,7.68555h138.79297c4.23828,0,7.68652-3.44727,7.68652-7.68555v-56.62891c0-4.23828-3.44824-7.68555-7.68652-7.68555h-138.79297Z"
+                  fill="#3f3d56"></path>
+                <path
+                  d="M325.87637,362.41564c-3.51759,0-6.37931,2.86172-6.37931,6.37931s2.86172,6.37931,6.37931,6.37931h14.28966c3.51759,0,6.37931-2.86172,6.37931-6.37931s-2.86172-6.37931-6.37931-6.37931h-14.28966Z"
+                  fill="#6c63ff"></path>
+                <path
+                  d="M369.36907,313.42253c-5.55,0-10.06511,4.51536-10.06511,10.06536s4.51511,10.06486,10.06511,10.06486h22.22841c5.55,0,10.06511-4.51486,10.06511-10.06486s-4.51511-10.06536-10.06511-10.06536h-22.22841Z"
+                  fill="#6c63ff"></path>
+              </g>
+              <path id="uuid-c026fd96-7d81-4b34-bb39-0646c0e08e96-204"
+                d="M465.67391,331.01678c-12.74718,6.63753-26.5046,5.44058-30.72743-2.67249-4.22283-8.11308,2.6878-20.06802,15.44041-26.70621,5.05777-2.72156,10.69376-4.19231,16.43644-4.28916l54.36547-27.44139,10.79681,21.52636-53.36733,28.57487c-3.37375,4.65048-7.81238,8.42516-12.94437,11.00803Z"
+                fill="#a0616a"></path>
+              <path d="M527.48463,97.10598s56-3,68,27c12,30,22,128,22,128l-122,66.37402-21-32.37402,82-64-29-125Z"
+                fill="#3f3d56"></path>
+            </svg></div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div><br>
+  <hr><br>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footercontainer">
+      <div class="footerrow">
+        <div class="footercol-md-2">
+          <h4 class=" footerh4">About Us</h4>
+          <ul class="footerul">
+            <li class="footerli"><a class="footera" href="#aboutsec"> About Us</a></li>
+            <li class="footerli"><a class="footera" href="#pricesec"> Pricing Plans</a></li>
+            <li class="footerli"><a class="footera" href="#servicesec">Our Services</a></li>
+            <li class="footerli"><a class="footera" href="#testimonialsec">Our clients</a></li>
+          </ul>
+        </div>
+        <div class="footercol-md-2">
+          <h4 class=" footerh4">Useful information </h4>
+          <ul class="footerul">
+            <li class="footerli"><a class="footera" href="#carouselExampleIndicators">Home</a></li>
+            <li class="footerli"><a class="footera" href="#productsec">Product List</a></li>
+            <li class="footerli"><a class="footera" href="#contactsec">Get In Touch</a></li>
+            <li class="footerli"><a class="footera" href="#faqssec">FAQ's</a></li>
+          
+          </ul>
+        </div>
+        <div class="footercol-md-8">
+          <div class="fform-container">
+            <form class="fform" onsubmit="return validateForm()">
+              <div class="fform-group">
+                <label for="email"> Email</label>
+                <input required="" name="email" id="email" type="text">
+                <span id="email-error" style="color: rgb(255, 183, 0);"></span>
+              </div><br>
+              <div class="fform-group">
+                <label for="textarea">How Can We Help You?</label>
+                <textarea required="" cols="50" rows="10" id="textarea" name="textarea"></textarea>
+                <span id="textarea-error" style="color: rgb(255, 183, 0);"></span>
+              </div>
+              <button type="submit" class="fform-submit-btn">Submit</button>
+              <span id="form-error" style="color: rgb(255, 183, 0);"></span>
+            </form>
+          </div>
+        </div>
+      </div><hr>
+      <div class="footerrow">
+        <div class="footercol-md-6">
+          <img class="footlogo" src="assests/logo.png" alt="logo" width="300px" height="150px">
+        </div>
+        <div class="footercol-md-6">
+          <h4 class=" footerh4">About Service </h4>
+          <p class="footerabout">Our mission is to be the most trusted and efficient courier service , delivering packages and parcels with precision and care. We strive to build long-term relationships with our customers, understanding their unique needs and exceeding their expectations.</p></div></div><hr>
+          <div class="footerrow text-center">
+        <div class="footercol-md-12 ">
+      <p class="footercopyright">Copyright &copy; 2023 Quick Route Courier Service. All rights reserved.</p></div></div>
+    </div>
+  </footer>
+
+
+
+  <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="clzptt2v603jhnibg52ww2gq9"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+
+    </script>
+  <script src="web.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.slider-nav .prev'),
+        nextArrow: $('.slider-nav .next')
+      });
+    });
+
+
+    //scroll
+    ScrollReveal({
+      //reset: true,
+      distance: "100px",
+      duration: 2500,
+      delay: 400
+
+
+    });
+
+    ScrollReveal().reveal('.cars,.serviceh1,.img-fluid,.tipimg,.washpara,.washh2', { delay: 300, origin: 'left' });
+    ScrollReveal().reveal('#navbarSupportedContent,.tiph2,.washh6,.washh1', { delay: 400, origin: 'top', interval: 100 });
+    ScrollReveal().reveal('.tippara', { delay: 400, origin: 'bottom', interval: 200 });
+    ScrollReveal().reveal('.bgdiv,.abtbtn ,.ctnleft', { delay: 500, origin: 'bottom', interval: 100 });
+    ScrollReveal().reveal('', { delay: 500, origin: 'right' });
+    ScrollReveal().reveal('.pricediv2,.faqsh5,.contactheadings,.ctnimg,.footerh4,.productimg,.productheadings', { delay: 700, origin: 'top' });
+    ScrollReveal().reveal('.abth5,.abth1,.columnscontact,.testimonialheadings,.footerul,.footerabout', { delay: 700, origin: 'left' });
+    ScrollReveal().reveal('.washimg,.plan,.slider-nav,.fform-container,.footlogo,.productcard ,.testimonial,.accordion-item,.abtslidercontainer', { delay: 600, origin: 'bottom', interval: 200 });
+    ScrollReveal().reveal('.footercopyright', { delay: 700, origin: "right", distance: "70px" });
+   
+
+    
+   //slider
+   const container = document.querySelector('.abtslidercontainer');
+        document.querySelector('.abtslider').addEventListener('input', (e) => {
+            container.style.setProperty('--position', `${e.target.value}%`);
+        })
+  </script>
+</body>
+
+</html>

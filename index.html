@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Route</title>
+   
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<style>
+ 
+ body{
+    background-color: rgb(0, 0, 0);
+ }
+.form {
+  background-color: #242323;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  padding: 20px;
+  width: 100%;
+  max-width: 2400px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #ee9a3f;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #1b1b1b;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  background-color: #242323;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.iLabel {
+  color: #000000;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .cut {
+  transform: translateY(8px);
+}
+
+.input:focus ~ .iLabel {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:focus) ~ .iLabel {
+  color: transparent;
+}
+
+.input:focus ~ .iLabel {
+  color: #eeeeee;
+}
+
+.submit {
+  background-color: rgb(248, 220, 172);
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  text-align: center;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.submit:active {
+  background-color: rgb(230, 185, 118);
+}
+
+.pushable {
+  position: relative;
+  background: transparent;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  outline-offset: 4px;
+  outline-color: deeppink;
+  transition: filter 250ms;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: hsl(46, 53%, 65%);
+  border-radius: 8px;
+  filter: blur(2px);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(
+    to right,
+    hsl (10, 53%, 22%) 0%,
+    
+    
+  );
+}
+
+.front {
+  display: block;
+  position: relative;
+  border-radius: 8px;
+  background: hsl(38, 91%, 44%);
+  padding: 16px 32px;
+  color: rgb(0, 0, 0);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  font-weight: bolder;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.pushable:hover {
+  filter: brightness(110%);
+}
+
+.pushable:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.pushable:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.pushable:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+.explorebtn{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 2400px;
+    flex-wrap: wrap;
+}
+h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+a{
+  text-decoration: none;
+}
+@media screen and (max-width:940px) {
+  h1{
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width:740px) {
+  h1{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width:480px) {
+  h1{
+    font-size: 1rem;
+  }
+}
+</style>
+<body>
+     <h1>QUICK ROUTE SERVICE HUB</h1>
+  
+     <div class="explorebtn">
+      <button class="pushable">
+         <span class="shadow"></span>
+         <span class="edge"></span>
+         <a href="sign.html"><span class="front">
+         Explore jobs
+         </span></a>
+       </button>
+       <button class="pushable">
+           <span class="shadow"></span>
+           <span class="edge"></span>
+           <a href="Quick_route_home .html"><span class="front">
+            Explore Services
+           </span></a>
+         </button>
+       </div>
+<div class="form">
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="a542cff2-64bc-4727-8c6b-6b0b0e44e05d">
+      <div class="title">Welcome</div>
+      <div class="subtitle">Let's create your account!</div>
+
+      <div class="input-container ic1">
+        <input placeholder="Name" type="text" class="input" id="firstname">
+        <div class="cut"></div>
+        <label class="iLabel" name="name" for="firstname">First name</label>
+      </div>
+
+      <div class="input-container ic2">
+        <input placeholder="Last Name" type="text" class="input" id="lastname">
+        <div class="cut"></div>
+        <label class="iLabel" name="last name" for="lastname">Last name</label>
+      </div>
+      <div class="input-container ic2">
+        <input placeholder="Email" type="text" class="input" name="email" id="email">
+        <div class="cut cut-short"></div>
+        <label class="iLabel" for="email">Email</label>
+      </div>
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+      <button class="submit" type="text">submit</button>
+    </form>
+    </div><br><br><br>
+   
+    <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="clzptt2v603jhnibg52ww2gq9"></script>
+
+
+    <script>
+    //scroll
+  ScrollReveal({
+      //reset: true,
+      distance: "100px",
+      duration: 2500,
+      delay: 400
+
+
+    });
+
+    ScrollReveal().reveal("h1", { delay: 300, origin: 'top' });
+    ScrollReveal().reveal('.pushable', { delay: 300, origin: 'left' });
+    ScrollReveal().reveal('.form', { delay: 300, origin: 'bottom' });
+    
+   
+</script>
+
+</body>
+
+</html>

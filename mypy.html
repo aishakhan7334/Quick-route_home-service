@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="scrap.css">
+
+    <style>
+        #job-container{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+        .card {
+            /* border: 1px solid #6f6f6f; */
+            padding: 16px;
+            margin: 16px;
+            border-radius: 8px;
+            width: 400px;
+            background-color: #FFB22C;
+        }
+        .card .job-title {
+            margin: 0;
+        }
+        .card .job-company {
+            margin: 0;
+            color: #D75611;
+        }
+        .card .job-location {
+            margin: 8px 0;
+        }
+        #fetchjobs{
+        height: 40px;
+        width: 90px;
+        background: rgb(118, 115, 115);
+        border: none;
+        color: azure;
+        
+        }
+        .job-btn{
+            padding:12px 20px;
+            width: 150px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px #abaaaa2c;
+            border: none;
+            background: #D75611;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 1.4rem 0;
+            letter-spacing: 1.2px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Job Listings</h1>
+    <div id="job-list">
+<button id="fetchjobs" onclick="fetchRenderJobs()">Fetch Jobs</button>
+        <div id="job-container">
+
+</div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="job.js"></script>
+    
+</body>
+</html>

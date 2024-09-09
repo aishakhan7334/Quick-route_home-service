@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#job-list {
+    margin: 20px;
+}
+
+.job {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.job h2 {
+    margin: 0;
+}
+
+.job p {
+    margin: 5px 0;
+}
