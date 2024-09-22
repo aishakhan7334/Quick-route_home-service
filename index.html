@@ -60,7 +60,7 @@
 }
 
 .input {
-  background-color: #ee9a3f;
+  background-color: #b1b0af;
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
@@ -117,7 +117,7 @@
 }
 
 .submit {
-  background-color: rgb(248, 220, 172);
+  background-color: rgb(253, 252, 252);
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
@@ -132,7 +132,7 @@
 }
 
 .submit:active {
-  background-color: rgb(230, 185, 118);
+  background-color: rgb(238, 232, 223);
 }
 
 .pushable {
@@ -180,7 +180,7 @@
   display: block;
   position: relative;
   border-radius: 8px;
-  background: hsl(38, 91%, 44%);
+  background: hsl(38, 47%, 39%);
   padding: 16px 32px;
   color: rgb(0, 0, 0);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -285,20 +285,20 @@ a{
       <div class="subtitle">Let's create your account!</div>
 
       <div class="input-container ic1">
-        <input placeholder="Name" type="text" class="input" id="firstname">
+        <input placeholder="Name" type="text" class="input" id="firstname" required>
         <div class="cut"></div>
         <label class="iLabel" name="name" for="firstname">First name</label>
       </div>
 
       <div class="input-container ic2">
-        <input placeholder="Last Name" type="text" class="input" id="lastname">
+        <input placeholder="Last Name" type="text" class="input" id="lastname" required>
         <div class="cut"></div>
         <label class="iLabel" name="last name" for="lastname">Last name</label>
       </div>
       <div class="input-container ic2">
-        <input placeholder="Email" type="text" class="input" name="email" id="email">
+        <input placeholder="Email" type="text" class="input" name="email" id="email" required>
         <div class="cut cut-short"></div>
-        <label class="iLabel" for="email">Email</label>
+        <label class="iLabel" for="email" >Email</label>
       </div>
       <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
       <button class="submit" type="text">submit</button>

@@ -122,7 +122,7 @@ section {
 .accordionfaq .accordion-contentfaq{
     margin: 23px 0;
     border-radius: 4px;
-    background: #FFB22C;
+    background: #c1c1c1;
     border: 1px solid #ecba8d;
     overflow: hidden;
 }
@@ -245,7 +245,7 @@ section {
         border-radius: 50%;
        box-sizing: border-box;
         padding:auto ;
-        background: #FFB22C;
+        background: #ffb637b4;
         margin-bottom: 14px;
       }
       .cardpf .contentpf .img img{
@@ -278,7 +278,7 @@ section {
         color: #FFF;
         border-radius: 50%;
         border: 2px solid transparent;
-        background: #FFB22C;
+        background: #ffb22cce;
         transition: all 0.3s ease;
       }
       .media-iconsf a:hover{
@@ -571,14 +571,14 @@ section {
     .job-listing{
       font-size: 5rem;
       font-weight: bolder;
-      color: #010101;
+      color: #f3f2f2;
       text-align: center;
     }
     .buttonDownload {
         display: inline-block;
         position: relative;
         padding: 30px;
-        background-color: #514303;
+        background-color: #7c7c7b9a;
         color: white;
         font-family: sans-serif;
         text-decoration: none;
@@ -592,7 +592,7 @@ section {
        }
        
        .buttonDownload:hover {
-        background-color: #ff860c;
+        background-color: #f8ca4dd0;
         color: rgb(250, 250, 250);
        }
        
@@ -603,7 +603,7 @@ section {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  background: #FFB22C;
+  background: #d7a44dc3;
   border: 0;
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
@@ -637,7 +637,7 @@ section {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
   }
   50% {
-    box-shadow: 0 0 0 0 rgba(235, 167, 9, 0.706), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 0 rgba(235, 167, 9, 0.029), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
   }
   
 

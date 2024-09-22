@@ -685,7 +685,7 @@ font-size: 13px;}
     <!-- PRODUCT3 -->
     <div class="productcard">
       <div class="productcard-img">
-        <div class="productimg"><img src="https://avatars.mds.yandex.net/i?id=36cf9f961cdd6bc85f71875e0c1cdc088d0c8450-4546582-images-thumbs&n=13" alt="" width="200px"></div>
+        <div class="productimg"><img src="https://avatars.mds.yandex.net/i?id=56ebccc984e66d5444a0047af503a831d2c4a37c-9228595-images-thumbs&n=13" alt="" width="200px"></div>
       </div>
       <div class="productcard-title">Pipes</div>
       <div class="productcard-subtitle"> Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -732,7 +732,7 @@ font-size: 13px;}
   <div class="contactinfo">
   <div class="contact1"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRxQR5onnZ3JxJAXlhNyUUm4G_NM6pRJJKztrMcBG0SBNLQCVx" alt="call-img" width="50px " style="margin: auto ; display: flex; padding-top: 40px;">
   <h3 class="contacth3">Call: 7784-786-34</h3>
-  <img src="stack.png" alt="line" width="30%" height="50px" style="margin: auto; display: flex;">
+  
   <p class="contactpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Volupta.</p>
   <h6 class="contacth6">Working hours 08:00 - 22:00</h6>
 
@@ -820,46 +820,7 @@ font-size: 13px;}
     </script>
     <script src="web.js"></script>
   <script>
-          // Get the slider inner container
-const sliderInner = document.querySelector('.testimonial-slider-inner');
-
-// Get the navigation buttons
-const prevButton = document.querySelector('.testimonial-prev');
-const nextButton = document.querySelector('.testimonial-next');
-
-// Get the testimonials
-const testimonials = document.querySelectorAll('.testimonial');
-
-// Set the current index
-let currentIndex = 0;
-
-// Function to show the next testimonial
-function nextTestimonial() {
-  if (currentIndex === testimonials.length - 1) {
-    currentIndex = 0;
-  } else {
-    currentIndex++;
-  }
-  sliderInner.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-// Function to show the previous testimonial
-function prevTestimonial() {
-  if (currentIndex === 0) {
-    currentIndex = testimonials.length - 1;
-  } else {
-    currentIndex--;
-  }
-  sliderInner.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-// Add event listeners to the navigation buttons
-prevButton.addEventListener('click', prevTestimonial);
-nextButton.addEventListener('click', nextTestimonial);
-
-// Show the first testimonial when the page loads
-sliderInner.style.transform = `translateX(0)`;
-
+   
 
 
 
